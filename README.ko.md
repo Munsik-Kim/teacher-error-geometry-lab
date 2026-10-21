@@ -28,7 +28,7 @@ python3.11 -m venv .venv
 .venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW_ID
 ```
 
-단일 명령으로 P1 17개·P2 12개·압축/도구 6개 검사를 수행하고, 증거를 복원해 최종 raw 248,000행 전체·선택 seed를 검산하며 summary와 7종 PNG/SVG를 재생성합니다. 새 receipt는 저장소 밖에 씁니다. 압축 복원만 하거나 개별 summary/그림을 만드는 명령은 [재현 안내](docs/REPRODUCTION.md)에 있습니다. [P3 보고서](docs/P3_REPORT.ko.md)는 과거 로컬 clean-copy 단계를 기록합니다. Hosted Ubuntu 24.04 CPU 검사와 최초 실패 이력은 [게시 이력](docs/PUBLICATION_HISTORY.md)에 남겼으며 최종 commit/CI 링크는 릴리스 기록에서 확인합니다. Hosted CPU 실행은 사람의 독립 심사와 구분합니다.
+단일 명령으로 P1 17개·P2 12개·압축/도구 7개 검사를 수행하고, 증거를 복원해 최종 raw 248,000행 전체·선택 seed를 검산하며 summary와 7종 PNG/SVG를 재생성합니다. 새 receipt는 저장소 밖에 씁니다. 압축 복원만 하거나 개별 summary/그림을 만드는 명령은 [재현 안내](docs/REPRODUCTION.md)에 있습니다. [P3 보고서](docs/P3_REPORT.ko.md)는 과거 로컬 clean-copy 단계를 기록합니다. Hosted Ubuntu 24.04 CPU 검사와 최초 실패 이력은 [게시 이력](docs/PUBLICATION_HISTORY.md)에 남겼으며 최종 commit/CI 링크는 릴리스 기록에서 확인합니다. Hosted CPU 실행은 사람의 독립 심사와 구분합니다.
 
 ## 선택적인 새 실험
 

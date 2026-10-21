@@ -1,6 +1,6 @@
 {
   "identity": "P3 public candidate active source; distinct from P1/P2 historical execution bundles and archive hash",
-  "source_bundle_sha256": "a8ad1a69cacef3cdeb204815363c71eda18c8246d9e7e7b0c884a16cf20fa42c",
+  "source_bundle_sha256": "a77e5cb94a684aa2759d9be32facb5e26b2d1334b0381f0e8202ec96d2ab4130",
   "definition": "SHA256 canonical JSON source_manifest list, sort_keys=True,separators=(comma,colon), sorted by relative path. Active code/config/tests/tools/build/CI/license files; excludes historical evidence/results/documentation.",
   "source_manifest": [
     {
@@ -64,9 +64,14 @@
       "sha256": "0bc408e2b33beeb5f4784c9a2d80880af821452dba2729d7f546a21e5e7e3c7e"
     },
     {
+      "path": "scripts/frozen_cell_metadata.py",
+      "bytes": 2272,
+      "sha256": "e4648ac5c333e2b6cd2d4d4aefeeeae5c0286056dedc61db6643a9dfe52e1aa5"
+    },
+    {
       "path": "scripts/recorded_worker.py",
-      "bytes": 4147,
-      "sha256": "3173c3fe7b8c8e929e3fc6fc56082c951c6209e494a33e8b3a624157f691a4e8"
+      "bytes": 5030,
+      "sha256": "d3123071ed37d093d4243941787c006c1961fe86ef23f896d72a0c7d4aa6efdd"
     },
     {
       "path": "scripts/teg",
@@ -191,7 +196,7 @@
     {
       "path": "src/teacher_error_geometry/public_validation.py",
       "bytes": 12107,
-      "sha256": "491060e326c066f2e5c78bc9a2efb02200c62f1c32f050e7f657b89570dd0e8f"
+      "sha256": "f2846800e5ad8612575dc50181567474f2f5a2732d5ae1d6cd9690a226a74aab"
     },
     {
       "path": "src/teacher_error_geometry/risk.py",
@@ -230,8 +235,8 @@
     },
     {
       "path": "tests_public/test_archive.py",
-      "bytes": 3771,
-      "sha256": "20c4a65ca4dc68891cb3a6166c06e7cf52cd64962b70ccdb3ac7d2293238df01"
+      "bytes": 5221,
+      "sha256": "b7570f6ecd315bb09cd5cc85dacecdd0406f6f798dfafaaf0d29ba61b063adec"
     }
   ]
 }

@@ -16,3 +16,8 @@ P3 is separate from the original research worktree. The scientific generators, t
 The public worker's sole historical adaptation replaces P2 preservation's absolute path lookup with a relative-path lookup into restored records. It still checks the original 340-file sizes/digests. It does not patch risk, solver, distribution, RNG or statistical criteria. New receipts identify this adaptation. Old source bundles and configs are checked separately before execution.
 
 The candidate's local commit/source inventory is a **new object**; it is not either historical execution commit or source bundle. The original Git history was not copied. A candidate inventory excludes itself and .git to avoid a self-referential hash. The archive hash authenticates only local bytes, not independent authorship or peer review.
+
+
+## Publication follow-up, 2026-10-21
+
+The table and P3 comparison manifest above record the initial local candidate. Public publication adds a P1 metadata bridge after a hosted CPU failure: hash-checked recorded cell coefficients remain the exact raw comparison reference, while recomputed derived coefficients are checked at the original FP64 tolerance. Historical scientific files are unchanged. See [publication history](PUBLICATION_HISTORY.md) for the observed failure, the new one-ULP regression and updated suite denominator, and [current source inventory](../publication/source_manifest.json) for the active public tools.

@@ -155,7 +155,7 @@ def verify_public(project, output):
         return run, time.perf_counter()-tick
 
     suites = []
-    for directory, expected in (("tests", 17), ("tests_p2", 12), ("tests_public", 6)):
+    for directory, expected in (("tests", 17), ("tests_p2", 12), ("tests_public", 7)):
         result, elapsed = child([sys.executable, "-I", "-B", "-m", "unittest", "discover", "-s", str(project/directory), "-v"], directory+".log")
         count = re.search(r"Ran (\d+) tests?", result.stderr)
         if count is None or int(count.group(1)) != expected:
