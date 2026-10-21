@@ -1,6 +1,6 @@
 {
   "identity": "P3 public candidate active source; distinct from P1/P2 historical execution bundles and archive hash",
-  "source_bundle_sha256": "5614e195b698f681365854df57f06d2b09eb3006b9926354b6e235564b122467",
+  "source_bundle_sha256": "06721cc9417a3c202996885484c80c9a3334f81b763c226cb2dbfe2f4f22ee8d",
   "definition": "SHA256 canonical JSON source_manifest list, sort_keys=True,separators=(comma,colon), sorted by relative path. Active code/config/tests/tools/build/CI/license files; excludes historical evidence/results/documentation.",
   "source_manifest": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/cpu.yml",
-      "bytes": 889,
-      "sha256": "8a113d485d653291fe45b8aa4cc61fdc3043acac1a83e6e56eb4ce76447b725d"
+      "bytes": 1640,
+      "sha256": "4bfdc5c00088ff6a1a3fa04bfd7ffeb37549689b35511e20edece0f11dc618c6"
     },
     {
       "path": ".gitignore",
@@ -72,6 +72,11 @@
       "path": "scripts/teg",
       "bytes": 587,
       "sha256": "d689aa18814be104217e2943fa0254f895547f0074a7f309c1d885c0ae7fc336"
+    },
+    {
+      "path": "scripts/update_public_manifest.py",
+      "bytes": 3040,
+      "sha256": "05b9f60e40dda76f854708452fe821d395f590ecbd55670e0c86cd37e5bea2c8"
     },
     {
       "path": "src/teacher_error_geometry/__init__.py",
