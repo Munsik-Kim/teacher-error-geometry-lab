@@ -5,11 +5,11 @@
     ".git",
     "publication/FILES.json (self-reference)"
   ],
-  "file_count_excluding_self": 128,
-  "bytes_excluding_self": 24455388,
-  "public_file_bundle_sha256": "8a4f0bf6ad7f89d3282b0cbff192d2b1bd68703ca656a47e052a4b659f956780",
+  "file_count_excluding_self": 130,
+  "bytes_excluding_self": 24464664,
+  "public_file_bundle_sha256": "929012a7971d5ffcd44cddc4e4e5a0f354e29332a7af16d834896f64449e33a7",
   "bundle_definition": "SHA256 canonical JSON files list, sort_keys=True,separators=(comma,colon), sorted by relative path",
-  "active_public_source_bundle_sha256": "5614e195b698f681365854df57f06d2b09eb3006b9926354b6e235564b122467",
+  "active_public_source_bundle_sha256": "a8ad1a69cacef3cdeb204815363c71eda18c8246d9e7e7b0c884a16cf20fa42c",
   "files": [
     {
       "path": ".gitattributes",
@@ -18,8 +18,8 @@
     },
     {
       "path": ".github/workflows/cpu.yml",
-      "bytes": 889,
-      "sha256": "8a113d485d653291fe45b8aa4cc61fdc3043acac1a83e6e56eb4ce76447b725d"
+      "bytes": 1666,
+      "sha256": "4b551218b77f3901a308b30f8f36ec7d36c5753dd68654cfdab64f751ee06489"
     },
     {
       "path": ".gitignore",
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.ko.md",
-      "bytes": 4016,
-      "sha256": "f1e32620c2c1fec58e741ff6be82c5681234a6294cac8893c44291c3e3a305a4"
+      "bytes": 4400,
+      "sha256": "af2c95f6b4e4fd1780bfdc566881ea71966a62ab6ab26c1ae5a367a777141772"
     },
     {
       "path": "README.md",
-      "bytes": 3814,
-      "sha256": "950902d71c39351dc4a571b7324ede9b18931fe466f7599843bdacded0750b64"
+      "bytes": 4251,
+      "sha256": "a6a62eb8f31d44d65a61d7ce5f378d150f8408c3dc7280ef3269a2b89627902a"
     },
     {
       "path": "configs/p1.json",
@@ -105,6 +105,11 @@
       "path": "docs/PORTABILITY.md",
       "bytes": 2165,
       "sha256": "40977706e0d76424742e3846efc6d86c9a96c71a507445caf8c44d3e79d7a9e7"
+    },
+    {
+      "path": "docs/PUBLICATION_HISTORY.md",
+      "bytes": 3545,
+      "sha256": "aeb8bd80d0381643d6eee5b79eabb3c09c2900d5aa6b4412843d2432f38f8816"
     },
     {
       "path": "docs/RELEASE_PLAN.md",
@@ -208,8 +213,8 @@
     },
     {
       "path": "publication/source_manifest.json",
-      "bytes": 7946,
-      "sha256": "758036d03f773c539ca38de7863cfa87a2337e7bc12e8aad80c47e181a4fafc4"
+      "bytes": 8115,
+      "sha256": "6cb81d6da1c14d6b09426f42b83e72be646f75d41758e7d10a43dc4ff9a63764"
     },
     {
       "path": "publication/visual_review.json",
@@ -497,6 +502,11 @@
       "sha256": "d689aa18814be104217e2943fa0254f895547f0074a7f309c1d885c0ae7fc336"
     },
     {
+      "path": "scripts/update_public_manifest.py",
+      "bytes": 3040,
+      "sha256": "05b9f60e40dda76f854708452fe821d395f590ecbd55670e0c86cd37e5bea2c8"
+    },
+    {
       "path": "src/teacher_error_geometry/__init__.py",
       "bytes": 86,
       "sha256": "72eac8e52ed4ff3433282b0f73c1d2ddb81aadb64fc92a671137981761668e59"
@@ -608,8 +618,8 @@
     },
     {
       "path": "src/teacher_error_geometry/public_validation.py",
-      "bytes": 11183,
-      "sha256": "52ce474c5433c8b468823f226602a06fe25905bdd4fd6df0e3e6d0ca5dc940ca"
+      "bytes": 12107,
+      "sha256": "491060e326c066f2e5c78bc9a2efb02200c62f1c32f050e7f657b89570dd0e8f"
     },
     {
       "path": "src/teacher_error_geometry/risk.py",

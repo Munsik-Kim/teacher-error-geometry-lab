@@ -1,11 +1,12 @@
 name: CPU recorded reproduction
 on:
   push:
+    branches: [main]
   pull_request:
   workflow_dispatch:
 jobs:
   recorded:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -20,5 +21,20 @@ jobs:
           .venv/bin/python -I -m pip check
       - name: Test and reproduce recorded data (no full experiment)
         run: .venv/bin/python -I -B -m teacher_error_geometry verify-public --output "$RUNNER_TEMP/teg-public"
+      - name: Show verification receipts and failure diagnostics
+        if: always()
+        run: |
+          python - <<'PY'
+          import os
+          from pathlib import Path
+          root = Path(os.environ["RUNNER_TEMP"]) / "teg-public"
+          paths = [*root.glob("*.log"), *root.glob("p*/verification.json"), *root.glob("p*/worker.json"), root / "environment.json", root / "report.json"]
+          for path in sorted(paths):
+              if path.is_file():
+                  print("RECEIPT", path.relative_to(root), flush=True)
+                  print(path.read_text(encoding="utf-8")[-40000:], flush=True)
+          PY
       - name: Check local documentation links and bilingual facts
         run: .venv/bin/python -I -B scripts/check_public_docs.py .
+      - name: Check current public manifests
+        run: .venv/bin/python -I -B scripts/update_public_manifest.py --check
