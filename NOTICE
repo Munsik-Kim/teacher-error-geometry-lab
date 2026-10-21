@@ -1,0 +1,15 @@
+Independent implementation: Teacher Error Geometry Lab, 2026.
+MIT applies to this project's independently authored code and documentation.
+
+Mathematical source:
+Agus Sudjianto and Denis Burakov (2026), Teacher Supervision, Fixed
+Representations and Calibration: Exact Risk Calculations for
+Candidate-Scoring Decision Models. arXiv:2610.26797v1.
+https://arxiv.org/html/2610.26797v1
+The source paper and any external code/material retain their own rights.
+No author code was accessed, copied or relicensed. No full paper is bundled.
+NumPy and Matplotlib are runtime dependencies under their respective licenses;
+their installations are not redistributed here.
+
+Implementation and numerical checking were AI-assisted. Local checks are not
+an independent human review or an external reproduction.

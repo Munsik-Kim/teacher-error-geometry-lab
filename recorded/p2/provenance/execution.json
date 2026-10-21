@@ -1,0 +1,43 @@
+{
+  "stage": "P2",
+  "experiment": "paper_anchor_full",
+  "execution_status": "COMPLETE",
+  "stop_reason": null,
+  "started_at_utc": "2026-10-21T06:51:12.343489+00:00",
+  "last_updated_utc": "2026-10-21T06:51:18.246931+00:00",
+  "wall_seconds": 5.903453523002099,
+  "cpu_seconds": 5.9133615,
+  "peak_rss_mib": 58.34765625,
+  "planned": {
+    "datasets": 20000,
+    "fitted_rows": 80000,
+    "solver_calls": 80000
+  },
+  "actual": {
+    "dataset_generation_attempts": 20000,
+    "datasets_generated": 20000,
+    "raw_rows": 80000,
+    "FO_rows": 20000,
+    "FT_rows": 20000,
+    "RO_rows": 20000,
+    "RM_rows": 20000,
+    "fit_requests": 80000,
+    "fit_objects": 80000,
+    "lstsq_calls": 80000
+  },
+  "numerical_status_counts": {
+    "ok": 80000
+  },
+  "source_bundle_sha256": "fc3f8e3e43beb117efd16c391d89a0d7b3d103611613d78639c869a01ddd20c7",
+  "config_sha256": "510781991629e037bd2dc1d66aa4533c7d903b3315b04050a53ee9cca2c1b4ef",
+  "batch_size": 200,
+  "GPU_jobs": 0,
+  "model_requests": 0,
+  "model_downloads": 0,
+  "paid_API_requests": 0,
+  "package_installs_or_upgrades": 0,
+  "remote_publication": 0,
+  "additional_QR_solves": 0,
+  "additional_test_datasets": 0,
+  "risk_definition": "population squared error against X beta, excludes observation noise variance"
+}

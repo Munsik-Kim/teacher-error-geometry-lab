@@ -1,0 +1,12 @@
+[
+  {
+    "path": "raw/datasets.csv",
+    "bytes": 11064580,
+    "sha256": "c55e624bb0e7b3a39fd1c867631e5eae6d523196d1823ba9620f623b9f7dea94"
+  },
+  {
+    "path": "raw/fits.csv",
+    "bytes": 38211094,
+    "sha256": "451960025235f4ce453aaf55c78e2dee148f46b969e09b0c53abc7c9094aa6e0"
+  }
+]

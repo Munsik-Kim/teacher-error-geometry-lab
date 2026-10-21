@@ -1,0 +1,128 @@
+{
+  "source_bundle_sha256": "286b7639b3abfb69503926dad32f35dc27ddd11356a8a15fe2b72377e37716a2",
+  "config_sha256": "f909d298b234af6a3a1a4175066004bd203d91d0ac9912cb34271e058551a11b",
+  "source_manifest": [
+    {
+      "path": "configs/p1.json",
+      "bytes": 2308,
+      "sha256": "5f3f369fb9e0df03a9711bf9aa4ba2507efc3cf46c2f723512239b7a7713e61d"
+    },
+    {
+      "path": "docs/claim_map.md",
+      "bytes": 1976,
+      "sha256": "69ee9686ec53e9d0d2698cf59528aeb48535ebbf893146d161a975596e4b24af"
+    },
+    {
+      "path": "docs/protocol.md",
+      "bytes": 7138,
+      "sha256": "afb5e9a00d035a29d1cd704b8a97239025f136d217d1c76934b09cf9b72d7415"
+    },
+    {
+      "path": "docs/source_access.md",
+      "bytes": 1248,
+      "sha256": "b8388407cc5b7278921055eae05a6e1b60c6bf5d046ce5faa18fc501d69102cd"
+    },
+    {
+      "path": "docs/theory.md",
+      "bytes": 5355,
+      "sha256": "d18f11ce1fb74b490e6c8e88d68cc09b273670be4a154daa239eea74f5a12efb"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 270,
+      "sha256": "6d024c27c1090ea91471c85bf0556c68c00d8f82ea6636f1b42975ad23bfb622"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 394,
+      "sha256": "1d263455ee7a0f7242760bb279861c3a1ce73b20e1cb82fa728c9b42210eeab6"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 33,
+      "sha256": "394e4bccf864729556a785f59a29e6a2c22ff6536f461f60f2ab62828705f3cd"
+    },
+    {
+      "path": "scripts/teg",
+      "bytes": 560,
+      "sha256": "222a196a5318c7d1051c3054a521c4bc4a7612e29689c8d3ac0def43225b882f"
+    },
+    {
+      "path": "src/teacher_error_geometry/__init__.py",
+      "bytes": 86,
+      "sha256": "72eac8e52ed4ff3433282b0f73c1d2ddb81aadb64fc92a671137981761668e59"
+    },
+    {
+      "path": "src/teacher_error_geometry/__main__.py",
+      "bytes": 4636,
+      "sha256": "776b1baf35b187872cb2f5be360b9a8b78f87a8d8c892a5fdb7ab57d705676b6"
+    },
+    {
+      "path": "src/teacher_error_geometry/artifacts.py",
+      "bytes": 4439,
+      "sha256": "41896af4f540bcc979b96a95e69ccb61e4b526ef5919f2e73134a16224d541e6"
+    },
+    {
+      "path": "src/teacher_error_geometry/checks.py",
+      "bytes": 2383,
+      "sha256": "86b582e9885099305bca367979fd114b8c39cfaaf70641cb8480bee4a16f4315"
+    },
+    {
+      "path": "src/teacher_error_geometry/design.py",
+      "bytes": 3463,
+      "sha256": "c21f74a1835a241eb7aa4a75eb37bcb85955512f93896a97fe6e6275eb2f0e8a"
+    },
+    {
+      "path": "src/teacher_error_geometry/experiment.py",
+      "bytes": 7939,
+      "sha256": "d997abd398ec320d8a3ba1ac666dd224da71e4e4872075ad77bab2dbc4da8ac0"
+    },
+    {
+      "path": "src/teacher_error_geometry/model.py",
+      "bytes": 2145,
+      "sha256": "9f0bc677c6115ffbdb8182769692618b544daf2522ba450115e8b618eb7e40e5"
+    },
+    {
+      "path": "src/teacher_error_geometry/plotting.py",
+      "bytes": 8189,
+      "sha256": "b3c0d0c6ce7ea92c0a132e30b18a062f1a69ed58efec3d73f43a719c644ce84b"
+    },
+    {
+      "path": "src/teacher_error_geometry/risk.py",
+      "bytes": 786,
+      "sha256": "b5f62acbdfb4b8acbdca68babf6cd776eec020c80f3608a0cd9c11dfac015850"
+    },
+    {
+      "path": "src/teacher_error_geometry/solver.py",
+      "bytes": 1307,
+      "sha256": "a46005f039e9d66245313f9b94333bb1b3a61c318ea6ad089d5f69149740d327"
+    },
+    {
+      "path": "src/teacher_error_geometry/summary.py",
+      "bytes": 8406,
+      "sha256": "a0ef4c3cc1c3cb9e1cc3266835021d073e4437f689dcdca22c2573d77e2534cd"
+    },
+    {
+      "path": "src/teacher_error_geometry/theory.py",
+      "bytes": 1805,
+      "sha256": "903c153c2f370643c60cd567d39b8d566f6e21246184e7f6739f159ed3bd5f22"
+    },
+    {
+      "path": "src/teacher_error_geometry/verification.py",
+      "bytes": 8910,
+      "sha256": "322b3b6094e648906d1294eaf23be4ca30563faa8d37e660c9b561377dd93ddb"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 11078,
+      "sha256": "2a57daae02baec681f02c457d12ab40b1bb4ea41897e5063831b71fd0ff0cb5d"
+    }
+  ],
+  "started_at_utc": "2026-10-21T06:03:10.472950+00:00",
+  "source_manifest_definition": "SHA256 of canonical JSON list (sort_keys=True,separators=(',',':')); ordered by path",
+  "git_commit": "df1173e91e77a43a53e9a82beea079c65bd0dab6",
+  "git_status_at_start": "?? runs/p1_full_20261021_02/\n",
+  "author_code_access": "NONE",
+  "source_snapshot": "provenance/source/; reports written later are not execution source",
+  "source_version_is": "bundle hash plus frozen config; git commit is supplementary"
+}

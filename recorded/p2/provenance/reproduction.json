@@ -1,0 +1,75 @@
+{
+  "status": "PASS",
+  "external_output": "/home/mskim/Codex_main/teacher-error-geometry-p2-rebuild-20261021T065112Z",
+  "files_compared": 10,
+  "checks": [
+    {
+      "path": "summary/methods.csv",
+      "bytes": 932,
+      "sha256": "38c8a7c7b0679a78ada634ee0fde325f1310955e7fa8961c693138801c794e34",
+      "byte_equal": true
+    },
+    {
+      "path": "summary/paired.csv",
+      "bytes": 1487,
+      "sha256": "323e762d59d90b74a49c1345cb517c960ec20f3e557b8b768b3cc9cb5c2df267",
+      "byte_equal": true
+    },
+    {
+      "path": "summary/decomposition.csv",
+      "bytes": 3746,
+      "sha256": "174a80a1c96f3a543f01e7cdf6b50f8f407c9cc66799c6d3791da8fc41095848",
+      "byte_equal": true
+    },
+    {
+      "path": "summary/failures.csv",
+      "bytes": 41,
+      "sha256": "0afa654817802c76fead90f74c4647054d9c6f61115954adefe5aba9abfb8bf0",
+      "byte_equal": true
+    },
+    {
+      "path": "summary/overview.json",
+      "bytes": 19707,
+      "sha256": "1a092e411d9d6c68e1d1b5f12f4781d1023939e0deed701de46736e2e81e2611",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/01_four_methods_truth_risk.png",
+      "bytes": 106722,
+      "sha256": "9b5003e6b5cb291ed2aed1b9fc6015a83d91f12ac754f4d97e8c0c29a6ebaf7b",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/01_four_methods_truth_risk.svg",
+      "bytes": 60352,
+      "sha256": "9fa71b944dc4a60fe2194752654db456c21abfdd854a1f0828af8d8e6e566edd",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/02_rm_decomposition.png",
+      "bytes": 138781,
+      "sha256": "08104353f754eb7db61913c616769765f164d9fa85bcc37cb78074fa960b8b9f",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/02_rm_decomposition.svg",
+      "bytes": 75315,
+      "sha256": "cc9ac5995ac4c414976b84d5feea999731ce15eaa39e48e61962ef0048a6fc7b",
+      "byte_equal": true
+    },
+    {
+      "path": "figures/manifest.json",
+      "bytes": 800,
+      "sha256": "00cedd5e8b2f20bc323f3585fe367e8349a1cb762ea762b74ab6035ec5f111bd",
+      "byte_equal": true
+    }
+  ],
+  "full_sweep_repeated": false,
+  "numeric_and_byte_match_in_recorded_environment": true,
+  "cross_environment_byte_guarantee": false,
+  "visual_inspection": {
+    "PNG": 2,
+    "SVG_rendered_via_existing_system_librsvg_Cairo": 2,
+    "performed_by": "AI-assisted internal inspection, not external or human review"
+  }
+}

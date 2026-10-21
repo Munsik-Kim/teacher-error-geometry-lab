@@ -1,0 +1,121 @@
+{
+  "schema_version": 1,
+  "experiment": "P1-full",
+  "root_seed": 2026102101,
+  "repetitions": 2000,
+  "c": 0.5,
+  "dtype": "float64",
+  "solver": "numpy.linalg.lstsq(rcond=None), single target, no intercept",
+  "batch_size": 200,
+  "wall_limit_seconds": 7200,
+  "tolerance": {
+    "atol": 1e-10,
+    "rtol": 1e-09
+  },
+  "diagnostics": {
+    "z_threshold": 4.0,
+    "pointwise_z": 1.96,
+    "sample_sd_ddof": 1
+  },
+  "rng": {
+    "generator": "PCG64",
+    "seed_sequence": [
+      "root_seed",
+      "stream_id",
+      "data_block_id",
+      "rho_index",
+      "n_index",
+      "replicate"
+    ],
+    "streams": {
+      "data": 0,
+      "independent_risk_check": 1,
+      "bootstrap_reserved_unused": 2
+    },
+    "blocks": {
+      "A_and_B": 0,
+      "C": 1,
+      "P0_diagnostic": 2
+    },
+    "indexing": "zero-based list order; B references A indices and dataset keys; teacher ID absent",
+    "draw_order": "standard_normal((2,n), dtype=float64): first row X1, second row U; no whitening",
+    "teacher_noise": "none; no RNG stream used"
+  },
+  "A": {
+    "rho": [
+      -0.9,
+      -0.5,
+      0.0,
+      0.5,
+      0.9
+    ],
+    "n": [
+      10,
+      30,
+      100,
+      300,
+      1000
+    ],
+    "teachers": [
+      "axis_visible",
+      "axis_hidden"
+    ]
+  },
+  "B": {
+    "rho": [
+      -0.9,
+      -0.5,
+      0.0,
+      0.5,
+      0.9
+    ],
+    "n": [
+      30,
+      300
+    ],
+    "teachers": [
+      "projection_zero"
+    ],
+    "reuse": "A"
+  },
+  "C": {
+    "rho": [
+      -0.75,
+      0.0,
+      0.75
+    ],
+    "n": [
+      30,
+      300
+    ],
+    "theta": [
+      0.0,
+      0.7853981633974483,
+      1.5707963267948966,
+      2.356194490192345
+    ],
+    "teachers": [
+      "normalized_angle"
+    ]
+  },
+  "execution_order": "A data: rho,n,replicate,visible/hidden/B when applicable; then C: rho,n,replicate,theta",
+  "planned": {
+    "cells": 84,
+    "fit_objects": 168000,
+    "unique_training_datasets": 62000,
+    "A_fit_objects": 100000,
+    "B_fit_objects": 20000,
+    "C_fit_objects": 48000,
+    "B_reused_datasets": 20000
+  },
+  "plots": [
+    "01_truth_by_n",
+    "02_hidden_projection_by_rho",
+    "03_teacher_vs_truth",
+    "04_angle_heatmap",
+    "05_eta_collapse"
+  ],
+  "summary": "Both population fitted risks; mean, sample SD, MC-SE, pointwise normal 95% CI, theory, difference, standardized difference; deterministic cells use tolerance; paired teacher differences use shared replicate keys",
+  "verification": "Raw completeness, uniqueness, pairing, source hashes, 12 fixed dataset replays, quadratic/conditional risks, independent P0 test MC; raw-to-summary-to-figure regeneration in a fresh output",
+  "scope": "Theorem 4.3/Corollary 4.5 two-dimensional special case only; no P2, GPU, model, paid API, or remote publication"
+}

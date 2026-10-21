@@ -1,0 +1,51 @@
+{
+  "implementation_verification": "PASS",
+  "execution_status": "COMPLETE",
+  "checks": 840259,
+  "failed_checks": 0,
+  "issues_first_100": [],
+  "raw_rows_checked": 80000,
+  "unique_dataset_metadata_checked": 20000,
+  "numerical_status_counts": {
+    "ok": 80000
+  },
+  "replayed_replicates": [
+    0,
+    1,
+    2,
+    7,
+    19,
+    49,
+    101,
+    999,
+    4095,
+    8191,
+    12345,
+    19999
+  ],
+  "replayed_method_rows": 48,
+  "verification_extra_calls": {
+    "fit_requests": 60,
+    "fit_objects": 60,
+    "lstsq_calls": 60,
+    "qr_validation_solves": 48
+  },
+  "verification_regenerated_datasets": 12,
+  "wall_seconds": 10.517060672002117,
+  "cpu_seconds": 10.3823491,
+  "peak_rss_mib": 115.25,
+  "P1_preservation": {
+    "status": "PASS",
+    "protected_file_count": 340,
+    "protected_bytes": 92111045,
+    "changed_or_missing": [],
+    "added_in_protected_run_or_rebuild": [],
+    "baseline_git_head": "b88902f282e4073cedbc66f515e31a657115f163",
+    "baseline_manifest_sha256": "86726c6558ab5a54a7bb07acc67e752c4de75f307770f92e622d1ef8a001ea6c",
+    "checked_at_utc": "2026-10-21T06:53:26.268595+00:00",
+    "scope": "All preexisting P0/P1 run files, snapshots, receipts, rebuilds, P1 reports/theory/source_access/history/config/tests/science modules and old handoff; shared CLI may be extended"
+  },
+  "full_sweep_repeated": false,
+  "AI_assisted_internal_check": true,
+  "human_external_review": false
+}

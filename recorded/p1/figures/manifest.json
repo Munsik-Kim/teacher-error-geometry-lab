@@ -1,0 +1,57 @@
+{
+  "figure_count": 5,
+  "files": [
+    {
+      "path": "01_truth_by_n.png",
+      "bytes": 84046,
+      "sha256": "121f6be1a93d167746219f9e9831724d46fde7d76e3b87602ca9af8cbd02cc64"
+    },
+    {
+      "path": "01_truth_by_n.svg",
+      "bytes": 120520,
+      "sha256": "7b825d2031d8c96b65dd9b7d6e88c9a93d06a50a81ae8bfdccad68690e0cfba7"
+    },
+    {
+      "path": "02_hidden_projection_by_rho.png",
+      "bytes": 141613,
+      "sha256": "6a813739569a6b5a14342318c6a9f359abc1288a2193ebd1e2ad8620c2b9841c"
+    },
+    {
+      "path": "02_hidden_projection_by_rho.svg",
+      "bytes": 85381,
+      "sha256": "d64042989cbc6979dacc07d140e8dfd032676d420da68357fd90272d1f91b780"
+    },
+    {
+      "path": "03_teacher_vs_truth.png",
+      "bytes": 77180,
+      "sha256": "7dd32d1b18aec68df9464cea3f4380a96b587aade92158f787f1b6bab706fdc6"
+    },
+    {
+      "path": "03_teacher_vs_truth.svg",
+      "bytes": 80841,
+      "sha256": "eb9c7307ccb3c3731e9d06c6821da3c12b55f33365d65fc48ea8d0e7f99da75d"
+    },
+    {
+      "path": "04_angle_heatmap.png",
+      "bytes": 158765,
+      "sha256": "cb9e10372048210d0f2e077d6f871442c3a9a43d7de88c73657023b29cac34cc"
+    },
+    {
+      "path": "04_angle_heatmap.svg",
+      "bytes": 121958,
+      "sha256": "27fef31209521bb866a9ec3d4e4e7c7923bdaa3fa2a1397fd1fc4cc029d52d22"
+    },
+    {
+      "path": "05_eta_collapse.png",
+      "bytes": 100806,
+      "sha256": "9b72cb4378bd25fc25a8a1341a83de4561cd2df693ce351d9023391d70513ab3"
+    },
+    {
+      "path": "05_eta_collapse.svg",
+      "bytes": 74093,
+      "sha256": "30deff096d371c71b50cb9eae19bbb7a2f48c9b7c0a1a09fbe6a1f7624c530bf"
+    }
+  ],
+  "data_source": "cells.csv plus frozen config in overview.json; no evaluation data generated",
+  "intervals": "pointwise normal 95%, not simultaneous"
+}

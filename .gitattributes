@@ -1,0 +1,6 @@
+# Preserve generated evidence bytes across clones/checkouts.
+# Python csv.writer emits CRLF; Matplotlib SVG path lines contain trailing spaces.
+*.csv -text whitespace=cr-at-eol
+*.svg -text -whitespace
+*.png -text
+*.tar.xz -text

@@ -1,0 +1,185 @@
+{
+  "execution_status": "COMPLETE",
+  "cells": 84,
+  "metric_cells": 168,
+  "paired_metric_comparisons": 162,
+  "raw_rows": 168000,
+  "failed_rows": 0,
+  "missing_rows": 0,
+  "cell_comparisons": {
+    "DETERMINISTIC_PASS": 62,
+    "WITHIN_4SE": 106
+  },
+  "flagged_metric_cells": [],
+  "flagged_paired_comparisons": [
+    {
+      "left_config_id": "C_r1_n0_t1",
+      "right_config_id": "C_r1_n0_t3",
+      "rho": 0.0,
+      "n": 30,
+      "metric": "teacher_risk",
+      "R_planned": 2000,
+      "N_pairs": 2000,
+      "N_incomplete_or_failed": 0,
+      "dataset_key_mismatches": 0,
+      "theory_difference": -5.551115123125783e-17,
+      "identical_teacher_reuse": false,
+      "independent_evidence": true,
+      "mean": -4.013456234019941e-17,
+      "sd": 3.825876322470994e-17,
+      "mc_se": 8.554919530552049e-19,
+      "ci95_low": -4.181132656818761e-17,
+      "ci95_high": -3.8457798112211205e-17,
+      "difference": 1.537658889105842e-17,
+      "standardized_difference": 17.97397256180406,
+      "comparison": "INVESTIGATE_4SE"
+    },
+    {
+      "left_config_id": "C_r1_n1_t1",
+      "right_config_id": "C_r1_n1_t3",
+      "rho": 0.0,
+      "n": 300,
+      "metric": "teacher_risk",
+      "R_planned": 2000,
+      "N_pairs": 2000,
+      "N_incomplete_or_failed": 0,
+      "dataset_key_mismatches": 0,
+      "theory_difference": -5.551115123125783e-17,
+      "identical_teacher_reuse": false,
+      "independent_evidence": true,
+      "mean": -3.902433931557425e-17,
+      "sd": 1.7452093284117347e-17,
+      "mc_se": 3.9024066932953937e-19,
+      "ci95_low": -3.9789211027460147e-17,
+      "ci95_high": -3.8259467603688354e-17,
+      "difference": 1.6486811915683577e-17,
+      "standardized_difference": 42.247805550377585,
+      "comparison": "INVESTIGATE_4SE"
+    }
+  ],
+  "statistical_comparison": "INVESTIGATE",
+  "interval_definition": "mean +/- 1.96 * sample_SD/sqrt(N_valid); pointwise normal approximation, no simultaneous coverage claim",
+  "independence_note": "Do not sum reused B data, multiple risks of one fit, or paired teacher targets as independent observations",
+  "config": {
+    "schema_version": 1,
+    "experiment": "P1-full",
+    "root_seed": 2026102101,
+    "repetitions": 2000,
+    "c": 0.5,
+    "dtype": "float64",
+    "solver": "numpy.linalg.lstsq(rcond=None), single target, no intercept",
+    "batch_size": 200,
+    "wall_limit_seconds": 7200,
+    "tolerance": {
+      "atol": 1e-10,
+      "rtol": 1e-09
+    },
+    "diagnostics": {
+      "z_threshold": 4.0,
+      "pointwise_z": 1.96,
+      "sample_sd_ddof": 1
+    },
+    "rng": {
+      "generator": "PCG64",
+      "seed_sequence": [
+        "root_seed",
+        "stream_id",
+        "data_block_id",
+        "rho_index",
+        "n_index",
+        "replicate"
+      ],
+      "streams": {
+        "data": 0,
+        "independent_risk_check": 1,
+        "bootstrap_reserved_unused": 2
+      },
+      "blocks": {
+        "A_and_B": 0,
+        "C": 1,
+        "P0_diagnostic": 2
+      },
+      "indexing": "zero-based list order; B references A indices and dataset keys; teacher ID absent",
+      "draw_order": "standard_normal((2,n), dtype=float64): first row X1, second row U; no whitening",
+      "teacher_noise": "none; no RNG stream used"
+    },
+    "A": {
+      "rho": [
+        -0.9,
+        -0.5,
+        0.0,
+        0.5,
+        0.9
+      ],
+      "n": [
+        10,
+        30,
+        100,
+        300,
+        1000
+      ],
+      "teachers": [
+        "axis_visible",
+        "axis_hidden"
+      ]
+    },
+    "B": {
+      "rho": [
+        -0.9,
+        -0.5,
+        0.0,
+        0.5,
+        0.9
+      ],
+      "n": [
+        30,
+        300
+      ],
+      "teachers": [
+        "projection_zero"
+      ],
+      "reuse": "A"
+    },
+    "C": {
+      "rho": [
+        -0.75,
+        0.0,
+        0.75
+      ],
+      "n": [
+        30,
+        300
+      ],
+      "theta": [
+        0.0,
+        0.7853981633974483,
+        1.5707963267948966,
+        2.356194490192345
+      ],
+      "teachers": [
+        "normalized_angle"
+      ]
+    },
+    "execution_order": "A data: rho,n,replicate,visible/hidden/B when applicable; then C: rho,n,replicate,theta",
+    "planned": {
+      "cells": 84,
+      "fit_objects": 168000,
+      "unique_training_datasets": 62000,
+      "A_fit_objects": 100000,
+      "B_fit_objects": 20000,
+      "C_fit_objects": 48000,
+      "B_reused_datasets": 20000
+    },
+    "plots": [
+      "01_truth_by_n",
+      "02_hidden_projection_by_rho",
+      "03_teacher_vs_truth",
+      "04_angle_heatmap",
+      "05_eta_collapse"
+    ],
+    "summary": "Both population fitted risks; mean, sample SD, MC-SE, pointwise normal 95% CI, theory, difference, standardized difference; deterministic cells use tolerance; paired teacher differences use shared replicate keys",
+    "verification": "Raw completeness, uniqueness, pairing, source hashes, 12 fixed dataset replays, quadratic/conditional risks, independent P0 test MC; raw-to-summary-to-figure regeneration in a fresh output",
+    "scope": "Theorem 4.3/Corollary 4.5 two-dimensional special case only; no P2, GPU, model, paid API, or remote publication"
+  },
+  "source_bundle_sha256": "0d7dffe0b90e17128f536bb3788ae9356d5f4bd0407942e485ca3885cbcd3a9a"
+}

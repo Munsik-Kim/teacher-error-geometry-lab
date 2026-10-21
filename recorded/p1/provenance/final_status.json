@@ -1,0 +1,20 @@
+{
+  "execution_status": "COMPLETE",
+  "implementation_verification": "PASS",
+  "statistical_comparison": "NO_4SE_FLAGS",
+  "publication_readiness": "LOCAL_CANDIDATE_READY",
+  "paper_correspondence": "READ_AND_MAPPED_SPECIAL_CASE_ONLY",
+  "P0_tests_passed": 17,
+  "independent_test_mc_passed": true,
+  "reproduction_status": "PASS",
+  "unresolved_MC_flags": 0,
+  "numerical_exception_rows": 0,
+  "missing_rows": 0,
+  "remote_publication": 0,
+  "GPU_jobs": 0,
+  "model_requests": 0,
+  "model_downloads": 0,
+  "paid_API_requests": 0,
+  "human_independent_review": false,
+  "P2_implemented_or_run": false
+}

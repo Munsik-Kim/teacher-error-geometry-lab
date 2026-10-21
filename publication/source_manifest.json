@@ -1,0 +1,232 @@
+{
+  "identity": "P3 public candidate active source; distinct from P1/P2 historical execution bundles and archive hash",
+  "source_bundle_sha256": "5614e195b698f681365854df57f06d2b09eb3006b9926354b6e235564b122467",
+  "definition": "SHA256 canonical JSON source_manifest list, sort_keys=True,separators=(comma,colon), sorted by relative path. Active code/config/tests/tools/build/CI/license files; excludes historical evidence/results/documentation.",
+  "source_manifest": [
+    {
+      "path": ".gitattributes",
+      "bytes": 228,
+      "sha256": "e8471cb18378807abd00cf0608e2eb8671a376bc173a2c430fe27a981f5a959a"
+    },
+    {
+      "path": ".github/workflows/cpu.yml",
+      "bytes": 889,
+      "sha256": "8a113d485d653291fe45b8aa4cc61fdc3043acac1a83e6e56eb4ce76447b725d"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 63,
+      "sha256": "08c2c4e90cc52cb664b71a2d2f6409f74befcc20a544f494504950e6bb0ff0b4"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1096,
+      "sha256": "888b3af2edcf8181df1d9666ad3a2299d4bbd1ded38aa7838783755f766aa9fd"
+    },
+    {
+      "path": "NOTICE",
+      "bytes": 793,
+      "sha256": "761200b3313d3847f315eaac116352579ca55baaa6facf8f9cd6cd3f608df5f7"
+    },
+    {
+      "path": "configs/p1.json",
+      "bytes": 2308,
+      "sha256": "5f3f369fb9e0df03a9711bf9aa4ba2507efc3cf46c2f723512239b7a7713e61d"
+    },
+    {
+      "path": "configs/p2_paper_anchor.json",
+      "bytes": 2221,
+      "sha256": "e184eb02ff56226861ea017f076dd93736fa7ae3f0e67f1c5c09b0b9e8241002"
+    },
+    {
+      "path": "environment.json",
+      "bytes": 237,
+      "sha256": "78f7694873e20a0cde61c47a3236b6e300625563aa6c4055ae6fa0e8555b4511"
+    },
+    {
+      "path": "pyproject.toml",
+      "bytes": 365,
+      "sha256": "3ae0fb876032e5cf8490b633d5bd248daa2b54fd1cb0464e6c8683a4e836ba00"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 389,
+      "sha256": "24a2aeb899fcdf25bcab57a5d88590f479d582a13ac411ef30b08748273f1756"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 33,
+      "sha256": "394e4bccf864729556a785f59a29e6a2c22ff6536f461f60f2ab62828705f3cd"
+    },
+    {
+      "path": "scripts/check_public_docs.py",
+      "bytes": 1955,
+      "sha256": "0bc408e2b33beeb5f4784c9a2d80880af821452dba2729d7f546a21e5e7e3c7e"
+    },
+    {
+      "path": "scripts/recorded_worker.py",
+      "bytes": 4147,
+      "sha256": "3173c3fe7b8c8e929e3fc6fc56082c951c6209e494a33e8b3a624157f691a4e8"
+    },
+    {
+      "path": "scripts/teg",
+      "bytes": 587,
+      "sha256": "d689aa18814be104217e2943fa0254f895547f0074a7f309c1d885c0ae7fc336"
+    },
+    {
+      "path": "src/teacher_error_geometry/__init__.py",
+      "bytes": 86,
+      "sha256": "72eac8e52ed4ff3433282b0f73c1d2ddb81aadb64fc92a671137981761668e59"
+    },
+    {
+      "path": "src/teacher_error_geometry/__main__.py",
+      "bytes": 5417,
+      "sha256": "c9a8fc3a5891261702705d33046417589b1ea0d74179026277e7428fff51668f"
+    },
+    {
+      "path": "src/teacher_error_geometry/artifacts.py",
+      "bytes": 4450,
+      "sha256": "704255c33e2496e899b040663648be04533d4f35df98fd5f778315f50d95b40e"
+    },
+    {
+      "path": "src/teacher_error_geometry/checks.py",
+      "bytes": 2383,
+      "sha256": "86b582e9885099305bca367979fd114b8c39cfaaf70641cb8480bee4a16f4315"
+    },
+    {
+      "path": "src/teacher_error_geometry/design.py",
+      "bytes": 3463,
+      "sha256": "c21f74a1835a241eb7aa4a75eb37bcb85955512f93896a97fe6e6275eb2f0e8a"
+    },
+    {
+      "path": "src/teacher_error_geometry/experiment.py",
+      "bytes": 7939,
+      "sha256": "d997abd398ec320d8a3ba1ac666dd224da71e4e4872075ad77bab2dbc4da8ac0"
+    },
+    {
+      "path": "src/teacher_error_geometry/model.py",
+      "bytes": 2145,
+      "sha256": "9f0bc677c6115ffbdb8182769692618b544daf2522ba450115e8b618eb7e40e5"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/__init__.py",
+      "bytes": 73,
+      "sha256": "6b12400597f5608c08234c9585e7fa5ddfafe90467b0ed4ff3ee7c1f1e3821a1"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/analysis.py",
+      "bytes": 6695,
+      "sha256": "f7db7852b50b864e34ea5a53b8a08a82abcc08a073a2b8134a5f77e9f27d1687"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/checks.py",
+      "bytes": 2409,
+      "sha256": "c6c1f06120c2330744ca105175a32a471aa3568fbbe623088d744f6175f4f97a"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/cli.py",
+      "bytes": 7105,
+      "sha256": "ee1ce7b0139821877dfac51759aaf75330df0d38f70cffab9b8b141728fb30b0"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/experiment.py",
+      "bytes": 7051,
+      "sha256": "425fbf04d342ca6878cd2734242ad5c60e25953ddb3dda3f3648c4401cca397d"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/model.py",
+      "bytes": 4532,
+      "sha256": "edc8058bafbd7421f3a66714baa77c0c7c1c8c1ef4c60d48c5712c9e401143e9"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/plotting.py",
+      "bytes": 4187,
+      "sha256": "cd68327832ba1db5bcbb4579ba7c1b2bb77485934156ec94b2a536d19950fec2"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/provenance.py",
+      "bytes": 3785,
+      "sha256": "72b4d2a0fbd9549c782307a55dcedfea1b47db7fa2bd16e16d82ce3748b666da"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/risk.py",
+      "bytes": 1905,
+      "sha256": "8eb7104dbd98b3e35d476a3680678332ced45d94bf95889e0a7b0bf92e115ffa"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/solver.py",
+      "bytes": 1239,
+      "sha256": "efecfc2a8f30f8966536850f61f59d0a64a348716140979d3f8958c20f4fe13c"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/theory.py",
+      "bytes": 2606,
+      "sha256": "5d6fe16cc1d17f8ffd33dc9355ad18b3428eebf2569a73aeb096a615e01752bc"
+    },
+    {
+      "path": "src/teacher_error_geometry/p2/verification.py",
+      "bytes": 8609,
+      "sha256": "1d03af59ae150b53a904fd0ef4396f7ebae6f64cc03819ccf140223fb77aa66b"
+    },
+    {
+      "path": "src/teacher_error_geometry/paths.py",
+      "bytes": 678,
+      "sha256": "0617424988d6f45bb8c3d39ae24da8a8689f9d7d5dce1a9636c61dc095b9428e"
+    },
+    {
+      "path": "src/teacher_error_geometry/plotting.py",
+      "bytes": 8189,
+      "sha256": "b3c0d0c6ce7ea92c0a132e30b18a062f1a69ed58efec3d73f43a719c644ce84b"
+    },
+    {
+      "path": "src/teacher_error_geometry/public_archive.py",
+      "bytes": 5011,
+      "sha256": "a4a71857db5660e6babbc596e1c00964a78b98ee1c2ddadb191e44894015ea62"
+    },
+    {
+      "path": "src/teacher_error_geometry/public_validation.py",
+      "bytes": 11183,
+      "sha256": "52ce474c5433c8b468823f226602a06fe25905bdd4fd6df0e3e6d0ca5dc940ca"
+    },
+    {
+      "path": "src/teacher_error_geometry/risk.py",
+      "bytes": 786,
+      "sha256": "b5f62acbdfb4b8acbdca68babf6cd776eec020c80f3608a0cd9c11dfac015850"
+    },
+    {
+      "path": "src/teacher_error_geometry/solver.py",
+      "bytes": 1307,
+      "sha256": "a46005f039e9d66245313f9b94333bb1b3a61c318ea6ad089d5f69149740d327"
+    },
+    {
+      "path": "src/teacher_error_geometry/summary.py",
+      "bytes": 8406,
+      "sha256": "a0ef4c3cc1c3cb9e1cc3266835021d073e4437f689dcdca22c2573d77e2534cd"
+    },
+    {
+      "path": "src/teacher_error_geometry/theory.py",
+      "bytes": 1805,
+      "sha256": "903c153c2f370643c60cd567d39b8d566f6e21246184e7f6739f159ed3bd5f22"
+    },
+    {
+      "path": "src/teacher_error_geometry/verification.py",
+      "bytes": 8910,
+      "sha256": "322b3b6094e648906d1294eaf23be4ca30563faa8d37e660c9b561377dd93ddb"
+    },
+    {
+      "path": "tests/test_contract.py",
+      "bytes": 11078,
+      "sha256": "2a57daae02baec681f02c457d12ab40b1bb4ea41897e5063831b71fd0ff0cb5d"
+    },
+    {
+      "path": "tests_p2/test_p2_contract.py",
+      "bytes": 9246,
+      "sha256": "eeabd4f9388a1cd54ced9f269a28b72b1d225c97897086309efdd63f7b170338"
+    },
+    {
+      "path": "tests_public/test_archive.py",
+      "bytes": 3771,
+      "sha256": "20c4a65ca4dc68891cb3a6166c06e7cf52cd64962b70ccdb3ac7d2293238df01"
+    }
+  ]
+}

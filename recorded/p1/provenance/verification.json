@@ -1,0 +1,30 @@
+{
+  "implementation_verification": "PASS",
+  "execution_status": "COMPLETE",
+  "raw_rows_checked": 168000,
+  "unique_dataset_metadata_checked": 62000,
+  "numerical_status_counts": {
+    "ok": 168000
+  },
+  "checks": 2542257,
+  "failed_checks": 0,
+  "issues_first_100": [],
+  "replayed_dataset_keys": [
+    "d0_r0_n0_rep0",
+    "d0_r0_n0_rep1",
+    "d0_r0_n0_rep1000",
+    "d0_r0_n0_rep1999",
+    "d0_r3_n0_rep0",
+    "d0_r3_n0_rep1",
+    "d0_r3_n0_rep1000",
+    "d0_r3_n0_rep1999",
+    "d1_r2_n1_rep0",
+    "d1_r2_n1_rep1",
+    "d1_r2_n1_rep1000",
+    "d1_r2_n1_rep1999"
+  ],
+  "replay_solver_calls": 32,
+  "full_rerun_performed": false,
+  "AI_assisted_internal_verification": true,
+  "scope": "data/solver/risk/provenance consistency for P1 only, not independent human or external review"
+}

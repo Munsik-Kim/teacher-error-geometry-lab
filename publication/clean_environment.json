@@ -1,0 +1,55 @@
+{
+  "public_copy_note": "Path-redacted P3 environment receipt. Only P3-owned paths and base-interpreter metadata are replaced by labels.",
+  "unmodified_local_receipt_sha256": "fbe9ecc4daaf6ab565d4630d9c7ad77d43144ddb261dc17b0304b06fd443dcba",
+  "receipt": {
+    "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+    "executable": "<P3_VENV>/bin/python",
+    "prefix": "<P3_VENV>",
+    "base_prefix": "<BASE_PYTHON>",
+    "isolated": 1,
+    "sys_path": [
+      "<BASE_PYTHON>/lib/python311.zip",
+      "<BASE_PYTHON>/lib/python3.11",
+      "<BASE_PYTHON>/lib/python3.11/lib-dynload",
+      "<P3_VENV>/lib/python3.11/site-packages"
+    ],
+    "user_site_enabled": false,
+    "include_system_site_packages": "home = <BASE_PYTHON>/bin\ninclude-system-site-packages = false\nversion = 3.11.15\nexecutable = <BASE_PYTHON>/bin/python3.11\ncommand = <BASE_PYTHON>/bin/python -m venv --copies <P3_VENV>\n",
+    "project_import": "<P3_VENV>/lib/python3.11/site-packages/teacher_error_geometry/__init__.py",
+    "numpy_import": "<P3_VENV>/lib/python3.11/site-packages/numpy/__init__.py",
+    "matplotlib_import": "<P3_VENV>/lib/python3.11/site-packages/matplotlib/__init__.py",
+    "blas": "{\n  \"Compilers\": {\n    \"c\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"10.2.1\",\n      \"commands\": \"cc\",\n      \"args\": \"-fno-strict-aliasing\",\n      \"linker args\": \"-Wl,--strip-debug, -fno-strict-aliasing\"\n    },\n    \"cython\": {\n      \"name\": \"cython\",\n      \"linker\": \"cython\",\n      \"version\": \"3.0.8\",\n      \"commands\": \"cython\"\n    },\n    \"c++\": {\n      \"name\": \"gcc\",\n      \"linker\": \"ld.bfd\",\n      \"version\": \"10.2.1\",\n      \"commands\": \"c++\",\n      \"linker args\": \"-Wl,--strip-debug\"\n    }\n  },\n  \"Machine Information\": {\n    \"host\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    },\n    \"build\": {\n      \"cpu\": \"x86_64\",\n      \"family\": \"x86_64\",\n      \"endian\": \"little\",\n      \"system\": \"linux\"\n    }\n  },\n  \"Build Dependencies\": {\n    \"blas\": {\n      \"name\": \"openblas64\",\n      \"found\": true,\n      \"version\": \"0.3.23.dev\",\n      \"detection method\": \"pkgconfig\",\n      \"include directory\": \"/usr/local/include\",\n      \"lib directory\": \"/usr/local/lib\",\n      \"openblas configuration\": \"USE_64BITINT=1 DYNAMIC_ARCH=1 DYNAMIC_OLDER= NO_CBLAS= NO_LAPACK= NO_LAPACKE= NO_AFFINITY=1 USE_OPENMP= HASWELL MAX_THREADS=2\",\n      \"pc file directory\": \"/usr/local/lib/pkgconfig\"\n    },\n    \"lapack\": {\n      \"name\": \"dep140213194937296\",\n      \"found\": true,\n      \"version\": \"1.26.4\",\n      \"detection method\": \"internal\",\n      \"include directory\": \"unknown\",\n      \"lib directory\": \"unknown\",\n      \"openblas configuration\": \"unknown\",\n      \"pc file directory\": \"unknown\"\n    }\n  },\n  \"Python Information\": {\n    \"path\": \"/opt/python/cp311-cp311/bin/python\",\n    \"version\": \"3.11\"\n  },\n  \"SIMD Extensions\": {\n    \"baseline\": [\n      \"SSE\",\n      \"SSE2\",\n      \"SSE3\"\n    ],\n    \"found\": [\n      \"SSSE3\",\n      \"SSE41\",\n      \"POPCNT\",\n      \"SSE42\",\n      \"AVX\",\n      \"F16C\",\n      \"FMA3\",\n      \"AVX2\",\n      \"AVX512F\",\n      \"AVX512CD\",\n      \"AVX512_SKX\",\n      \"AVX512_CLX\",\n      \"AVX512_CNL\",\n      \"AVX512_ICL\"\n    ],\n    \"not found\": [\n      \"AVX512_KNL\",\n      \"AVX512_KNM\"\n    ]\n  }\n}\n",
+    "platform": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+    "packages": {
+      "pyparsing": "3.3.3",
+      "pip": "24.0",
+      "python-dateutil": "2.9.0.post0",
+      "teacher-error-geometry": "0.1.0",
+      "cycler": "0.12.1",
+      "numpy": "1.26.4",
+      "packaging": "26.3",
+      "setuptools": "79.0.1",
+      "contourpy": "1.3.3",
+      "wheel": "0.48.0",
+      "kiwisolver": "1.5.1",
+      "matplotlib": "3.10.9",
+      "fonttools": "4.67.0",
+      "pillow": "13.0.0",
+      "six": "1.17.0"
+    },
+    "pth_files": [
+      {
+        "path": "lib/python3.11/site-packages/distutils-precedence.pth",
+        "contents": "import os; var = 'SETUPTOOLS_USE_DISTUTILS'; enabled = os.environ.get(var, 'local') == 'local'; enabled and __import__('_distutils_hack').add_shim(); \n"
+      }
+    ],
+    "editable_install": false,
+    "direct_url": "{\"dir_info\": {}, \"url\": \"file://<PUBLIC_CLEAN_COPY>\"}",
+    "PYTHONPATH_environment": null,
+    "PYTHONHOME_environment": null,
+    "pip_check": {
+      "exit_code": 0,
+      "output": "No broken requirements found.\nWARNING: The directory '/home/mskim/.cache/pip' or its parent directory is not owned or is not writable by the current user. The cache has been disabled. Check the permissions and owner of that directory. If executing pip with sudo, you should use sudo's -H flag.\n"
+    }
+  }
+}

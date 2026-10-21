@@ -1,0 +1,256 @@
+{
+  "public_copy_note": "Path-redacted P3 receipt; original P3 receipt remains in the local validation directory. Historical evidence archive is unchanged.",
+  "unmodified_local_receipt_sha256": "04d95aea9593b9c7f3913e675a28ae1ca1ac7e330213c7637052559d2b4d3231",
+  "receipt": {
+    "scientific_scope": "P1_SPECIAL_CASE_AND_P2_SINGLE_GAUSSIAN_SETTING",
+    "public_reproduction": "PASS",
+    "recorded_integrity": "PASS",
+    "frozen_source_checks": {
+      "p1_first": {
+        "git_commit": "c098b75895a980b2dc771a5c34e6e7562ecf2354",
+        "source_bundle_sha256": "0d7dffe0b90e17128f536bb3788ae9356d5f4bd0407942e485ca3885cbcd3a9a",
+        "config_sha256": "f909d298b234af6a3a1a4175066004bd203d91d0ac9912cb34271e058551a11b",
+        "snapshot_files_checked": 23
+      },
+      "p1": {
+        "git_commit": "df1173e91e77a43a53e9a82beea079c65bd0dab6",
+        "source_bundle_sha256": "286b7639b3abfb69503926dad32f35dc27ddd11356a8a15fe2b72377e37716a2",
+        "config_sha256": "f909d298b234af6a3a1a4175066004bd203d91d0ac9912cb34271e058551a11b",
+        "snapshot_files_checked": 23
+      },
+      "p2": {
+        "git_commit": "9b502ee4739e7acb43f94a89bdf57cfbc303a38b",
+        "source_bundle_sha256": "fc3f8e3e43beb117efd16c391d89a0d7b3d103611613d78639c869a01ddd20c7",
+        "config_sha256": "510781991629e037bd2dc1d66aa4533c7d903b3315b04050a53ee9cca2c1b4ef",
+        "snapshot_files_checked": 40
+      },
+      "p1_raw_identical_across_two_full_runs": true,
+      "past_commits_present_in_public_git_history": false
+    },
+    "restored": {
+      "files": 530,
+      "bytes": 143834303,
+      "status": "PASS",
+      "archive_sha256": "fc01f26226732293d584c5d515452b665e1712b9c9759bc72c1717fff5b72d0a",
+      "physical_members": 257
+    },
+    "restored_unchanged_after_verification": {
+      "files": 530,
+      "bytes": 143834303,
+      "status": "PASS"
+    },
+    "historical_normal_file_copies_checked": 52,
+    "tests": [
+      {
+        "suite": "tests",
+        "tests_run": 17,
+        "status": "PASS",
+        "wall_seconds": 0.3632541240003775
+      },
+      {
+        "suite": "tests_p2",
+        "tests_run": 12,
+        "status": "PASS",
+        "wall_seconds": 0.1979541969994898
+      },
+      {
+        "suite": "tests_public",
+        "tests_run": 6,
+        "status": "PASS",
+        "wall_seconds": 0.08776858200144488
+      }
+    ],
+    "phases": {
+      "p1": {
+        "phase": "p1",
+        "implementation_verification": "PASS",
+        "statistical_comparison": "NO_4SE_FLAGS",
+        "raw_rows": 168000,
+        "wall_seconds": 18.53872421900087,
+        "historical_code_root": "<P3_VALIDATION>/clean_reproduction/records/runs/p1_full_20261021_02/provenance/source",
+        "original_access_denied": true,
+        "denied_original_open_attempts": 0,
+        "full_sweep_executed": false,
+        "figure_count": 5,
+        "summary_comparison": {
+          "numeric_values_compared": 6338,
+          "max_absolute_difference": 0.0,
+          "files": [
+            {
+              "path": "cells.csv",
+              "bytes_identical": true,
+              "sha256": "062efa02c6e5fc66a8653bf1c3a6ac6e72cf8c6f3b3b8885124771d54144c217"
+            },
+            {
+              "path": "failures.csv",
+              "bytes_identical": true,
+              "sha256": "5aa2045fe4e3cbabb5c0d1d649b6a1e284b53d683bbed8a5ce253c0e460c9c96"
+            },
+            {
+              "path": "overview.json",
+              "bytes_identical": true,
+              "sha256": "642a4ee6a0fe1fc7927104dcfa0a78626b175c1de36876346b40630689d95054"
+            },
+            {
+              "path": "paired_differences.csv",
+              "bytes_identical": true,
+              "sha256": "df8b26b65c4a59f132c2145ee87d32d9f4932aa2d2566d5cb6ef3e9ad823d0df"
+            }
+          ],
+          "status": "PASS",
+          "tolerance": {
+            "atol": 1e-10,
+            "rtol": 1e-09
+          }
+        },
+        "figures": [
+          {
+            "path": "01_truth_by_n.png",
+            "sha256": "121f6be1a93d167746219f9e9831724d46fde7d76e3b87602ca9af8cbd02cc64",
+            "bytes_identical": true
+          },
+          {
+            "path": "01_truth_by_n.svg",
+            "sha256": "7b825d2031d8c96b65dd9b7d6e88c9a93d06a50a81ae8bfdccad68690e0cfba7",
+            "bytes_identical": true
+          },
+          {
+            "path": "02_hidden_projection_by_rho.png",
+            "sha256": "6a813739569a6b5a14342318c6a9f359abc1288a2193ebd1e2ad8620c2b9841c",
+            "bytes_identical": true
+          },
+          {
+            "path": "02_hidden_projection_by_rho.svg",
+            "sha256": "d64042989cbc6979dacc07d140e8dfd032676d420da68357fd90272d1f91b780",
+            "bytes_identical": true
+          },
+          {
+            "path": "03_teacher_vs_truth.png",
+            "sha256": "7dd32d1b18aec68df9464cea3f4380a96b587aade92158f787f1b6bab706fdc6",
+            "bytes_identical": true
+          },
+          {
+            "path": "03_teacher_vs_truth.svg",
+            "sha256": "eb9c7307ccb3c3731e9d06c6821da3c12b55f33365d65fc48ea8d0e7f99da75d",
+            "bytes_identical": true
+          },
+          {
+            "path": "04_angle_heatmap.png",
+            "sha256": "cb9e10372048210d0f2e077d6f871442c3a9a43d7de88c73657023b29cac34cc",
+            "bytes_identical": true
+          },
+          {
+            "path": "04_angle_heatmap.svg",
+            "sha256": "27fef31209521bb866a9ec3d4e4e7c7923bdaa3fa2a1397fd1fc4cc029d52d22",
+            "bytes_identical": true
+          },
+          {
+            "path": "05_eta_collapse.png",
+            "sha256": "9b72cb4378bd25fc25a8a1341a83de4561cd2df693ce351d9023391d70513ab3",
+            "bytes_identical": true
+          },
+          {
+            "path": "05_eta_collapse.svg",
+            "sha256": "30deff096d371c71b50cb9eae19bbb7a2f48c9b7c0a1a09fbe6a1f7624c530bf",
+            "bytes_identical": true
+          }
+        ]
+      },
+      "p2": {
+        "phase": "p2",
+        "implementation_verification": "PASS",
+        "statistical_comparison": "NO_4SE_FLAGS",
+        "raw_rows": 80000,
+        "wall_seconds": 12.044963872001972,
+        "historical_code_root": "<P3_VALIDATION>/clean_reproduction/records/runs/p2_paper_anchor_20261021T065112Z/provenance/source",
+        "original_access_denied": true,
+        "denied_original_open_attempts": 0,
+        "full_sweep_executed": false,
+        "figure_count": 2,
+        "summary_comparison": {
+          "numeric_values_compared": 843,
+          "max_absolute_difference": 0.0,
+          "files": [
+            {
+              "path": "decomposition.csv",
+              "bytes_identical": true,
+              "sha256": "174a80a1c96f3a543f01e7cdf6b50f8f407c9cc66799c6d3791da8fc41095848"
+            },
+            {
+              "path": "failures.csv",
+              "bytes_identical": true,
+              "sha256": "0afa654817802c76fead90f74c4647054d9c6f61115954adefe5aba9abfb8bf0"
+            },
+            {
+              "path": "methods.csv",
+              "bytes_identical": true,
+              "sha256": "38c8a7c7b0679a78ada634ee0fde325f1310955e7fa8961c693138801c794e34"
+            },
+            {
+              "path": "overview.json",
+              "bytes_identical": true,
+              "sha256": "1a092e411d9d6c68e1d1b5f12f4781d1023939e0deed701de46736e2e81e2611"
+            },
+            {
+              "path": "paired.csv",
+              "bytes_identical": true,
+              "sha256": "323e762d59d90b74a49c1345cb517c960ec20f3e557b8b768b3cc9cb5c2df267"
+            }
+          ],
+          "status": "PASS",
+          "tolerance": {
+            "atol": 1e-10,
+            "rtol": 1e-09
+          }
+        },
+        "figures": [
+          {
+            "path": "01_four_methods_truth_risk.png",
+            "sha256": "9b5003e6b5cb291ed2aed1b9fc6015a83d91f12ac754f4d97e8c0c29a6ebaf7b",
+            "bytes_identical": true
+          },
+          {
+            "path": "01_four_methods_truth_risk.svg",
+            "sha256": "9fa71b944dc4a60fe2194752654db456c21abfdd854a1f0828af8d8e6e566edd",
+            "bytes_identical": true
+          },
+          {
+            "path": "02_rm_decomposition.png",
+            "sha256": "08104353f754eb7db61913c616769765f164d9fa85bcc37cb78074fa960b8b9f",
+            "bytes_identical": true
+          },
+          {
+            "path": "02_rm_decomposition.svg",
+            "sha256": "cc9ac5995ac4c414976b84d5feea999731ce15eaa39e48e61962ef0048a6fc7b",
+            "bytes_identical": true
+          }
+        ]
+      }
+    },
+    "raw_rows_checked": 248000,
+    "tolerance": {
+      "atol": 1e-10,
+      "rtol": 1e-09
+    },
+    "python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+    "packages": {
+      "numpy": "1.26.4",
+      "matplotlib": "3.10.9",
+      "project_import": "<P3_VENV>/lib/python3.11/site-packages/teacher_error_geometry/__init__.py",
+      "numpy_import": "<P3_VENV>/lib/python3.11/site-packages/numpy/__init__.py",
+      "matplotlib_import": "<P3_VENV>/lib/python3.11/site-packages/matplotlib/__init__.py"
+    },
+    "isolated_python": true,
+    "user_site_enabled": false,
+    "same_machine_and_OS_as_original": true,
+    "external_independent_reproduction": false,
+    "new_full_sweeps": 0,
+    "remote_publication": "NOT_RUN",
+    "network_required_for_recorded_check": false,
+    "wall_seconds": 32.477549896997516,
+    "cpu_seconds_including_children": 32.3207629,
+    "peak_child_rss_mib": 386.03125,
+    "AI_assisted_internal_check": true,
+    "completed_at_utc": "2026-10-21T07:51:29.779357+00:00"
+  }
+}

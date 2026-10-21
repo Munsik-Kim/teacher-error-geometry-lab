@@ -1,0 +1,43 @@
+{
+  "PNG_AI_visual_review_count": 7,
+  "SVG_XML_label_review_count": 7,
+  "SVG_visual_rasterization_performed": false,
+  "review": "PNG axes/legends, rho/n/theta labels, 24-cell heatmap and signed positive RM cross term inspected by AI; no external human review. PNG/SVG byte equality with original is separately verified.",
+  "SVGs": [
+    {
+      "path": "p1/figures/01_truth_by_n.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 1141.871404 287.37625"
+    },
+    {
+      "path": "p1/figures/02_hidden_projection_by_rho.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 783.81875 323.34025"
+    },
+    {
+      "path": "p1/figures/03_teacher_vs_truth.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 783.81875 307.10425"
+    },
+    {
+      "path": "p1/figures/04_angle_heatmap.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 776.440737 515.43625"
+    },
+    {
+      "path": "p1/figures/05_eta_collapse.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 783.75625 323.34025"
+    },
+    {
+      "path": "p2/figures/01_four_methods_truth_risk.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 635.364016 350.753469"
+    },
+    {
+      "path": "p2/figures/02_rm_decomposition.svg",
+      "xml_valid": true,
+      "svg_viewBox": "0 0 922.241932 373.003531"
+    }
+  ]
+}

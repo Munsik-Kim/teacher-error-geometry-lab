@@ -1,0 +1,51 @@
+{
+  "public_copy_note": "New P3 verification receipt; original recorded historical receipts remain unchanged. New output paths replaced by labels.",
+  "unmodified_local_receipt_sha256": "0bbeb336fcdbd4b073bfd72c027d8aa7217b2f0e0dba6a1c7e2385983a404355",
+  "receipt": {
+    "implementation_verification": "PASS",
+    "execution_status": "COMPLETE",
+    "checks": 840259,
+    "failed_checks": 0,
+    "issues_first_100": [],
+    "raw_rows_checked": 80000,
+    "unique_dataset_metadata_checked": 20000,
+    "numerical_status_counts": {
+      "ok": 80000
+    },
+    "replayed_replicates": [
+      0,
+      1,
+      2,
+      7,
+      19,
+      49,
+      101,
+      999,
+      4095,
+      8191,
+      12345,
+      19999
+    ],
+    "replayed_method_rows": 48,
+    "verification_extra_calls": {
+      "fit_requests": 60,
+      "fit_objects": 60,
+      "lstsq_calls": 60,
+      "qr_validation_solves": 48
+    },
+    "verification_regenerated_datasets": 12,
+    "wall_seconds": 10.486913191001804,
+    "cpu_seconds": 10.4380944,
+    "peak_rss_mib": 135.7421875,
+    "P1_preservation": {
+      "status": "PASS",
+      "protected_file_count": 340,
+      "changed_or_missing": [],
+      "verification_mode": "relocated original paths; original bytes and criteria unchanged",
+      "original_research_access": false
+    },
+    "full_sweep_repeated": false,
+    "AI_assisted_internal_check": true,
+    "human_external_review": false
+  }
+}

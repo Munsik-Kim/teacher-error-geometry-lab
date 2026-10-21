@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "installed_package_modules_identical_to_candidate": 28,
+  "original_science_and_tests_identical": true,
+  "credential_pattern_or_forbidden_file_hits": [],
+  "personal_defaults_in_entry_documents": [],
+  "scope_note": "Pattern scan is a packaging check, not a security certification. Historical metadata inside immutable evidence remains unchanged."
+}

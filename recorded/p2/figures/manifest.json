@@ -1,0 +1,27 @@
+{
+  "figure_count": 2,
+  "files": [
+    {
+      "path": "01_four_methods_truth_risk.png",
+      "bytes": 106722,
+      "sha256": "9b5003e6b5cb291ed2aed1b9fc6015a83d91f12ac754f4d97e8c0c29a6ebaf7b"
+    },
+    {
+      "path": "01_four_methods_truth_risk.svg",
+      "bytes": 60352,
+      "sha256": "9fa71b944dc4a60fe2194752654db456c21abfdd854a1f0828af8d8e6e566edd"
+    },
+    {
+      "path": "02_rm_decomposition.png",
+      "bytes": 138781,
+      "sha256": "08104353f754eb7db61913c616769765f164d9fa85bcc37cb78074fa960b8b9f"
+    },
+    {
+      "path": "02_rm_decomposition.svg",
+      "bytes": 75315,
+      "sha256": "cc9ac5995ac4c414976b84d5feea999731ce15eaa39e48e61962ef0048a6fc7b"
+    }
+  ],
+  "source": "saved summary only; no refits or test data generated",
+  "intervals": "pointwise normal 95%"
+}

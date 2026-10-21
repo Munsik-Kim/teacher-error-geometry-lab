@@ -1,0 +1,194 @@
+{
+  "schema_version": 1,
+  "stage": "P2",
+  "experiment": "paper_anchor_full",
+  "d": 5,
+  "r": 3,
+  "n": 27,
+  "Sigma": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      1
+    ]
+  ],
+  "A": [
+    [
+      1,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      0,
+      1,
+      0,
+      0
+    ]
+  ],
+  "beta": [
+    0.9,
+    -0.6,
+    0.5,
+    0.2,
+    -0.2
+  ],
+  "delta": [
+    0.22,
+    -0.13,
+    0.1,
+    0.35,
+    -0.2
+  ],
+  "sigma2": 1.3,
+  "tau2": 0.7,
+  "omega": 0.22,
+  "lambda": 0.45,
+  "repetitions": 20000,
+  "root_seed": 2026102102,
+  "dtype": "float64",
+  "methods": [
+    "FO",
+    "FT",
+    "RO",
+    "RM"
+  ],
+  "paired_contrasts": [
+    [
+      "FO",
+      "FT"
+    ],
+    [
+      "FO",
+      "RO"
+    ],
+    [
+      "FO",
+      "RM"
+    ],
+    [
+      "FT",
+      "RO"
+    ],
+    [
+      "FT",
+      "RM"
+    ],
+    [
+      "RO",
+      "RM"
+    ]
+  ],
+  "paired_sign": "left method truth risk minus right method truth risk, on shared replicate",
+  "rng": {
+    "generator": "NumPy PCG64",
+    "seed_sequence": [
+      "root_seed",
+      "stream_id",
+      "replicate_id"
+    ],
+    "streams": {
+      "X": 0,
+      "E": 1,
+      "H": 2,
+      "test_mc": 3
+    },
+    "pilot_stream_offset": 100,
+    "unit_fixture_stream_offset": 200,
+    "draw_order": "X:standard_normal((n,d)); E,H:standard_normal(n), separate generators",
+    "replicate_index": "zero-based; method absent from seeds; batching/order independent",
+    "paper_backend": "PyTorch generator, seed 20261016; samples not claimed bitwise equal",
+    "root_seed_reason": "Independent phase seed, separate from P1=2026102101 and original PyTorch seed; expectation reproduction only"
+  },
+  "solver": "FP64 numpy.linalg.lstsq(rcond=None), one target/call, no intercept or regularization",
+  "batch_size": 200,
+  "wall_limit_seconds": 7200,
+  "tolerance": {
+    "atol": 1e-10,
+    "rtol": 1e-09
+  },
+  "diagnostics": {
+    "z_threshold": 4.0,
+    "pointwise_z": 1.96,
+    "sd_ddof": 1,
+    "determinism": "structural identities only; main four risks and six pairs are stochastic"
+  },
+  "replay_replicates": [
+    0,
+    1,
+    2,
+    7,
+    19,
+    49,
+    101,
+    999,
+    4095,
+    8191,
+    12345,
+    19999
+  ],
+  "independent_test_mc": {
+    "training_replicates": [
+      7,
+      19
+    ],
+    "test_rows_per_fit": 100000,
+    "threshold_se": 6.0
+  },
+  "metrics": [
+    "truth_risk",
+    "representation_loss",
+    "teacher_bias",
+    "cross_term",
+    "estimation_quadratic"
+  ],
+  "plot_plan": [
+    "01_four_methods_truth_risk",
+    "02_rm_decomposition"
+  ],
+  "planned": {
+    "unique_training_datasets": 20000,
+    "fit_objects": 80000,
+    "solver_calls": 80000
+  },
+  "scope": "Single n=27 and lambda=.45 Gaussian regression anchor of Table1; no sweep, P3 experiment, GPU, model, API or remote publication"
+}

@@ -1,0 +1,39 @@
+{
+  "scientific_scope": "P1_SPECIAL_CASE_AND_P2_SINGLE_GAUSSIAN_SETTING",
+  "clean_public_copy": "PASS",
+  "public_reproduction": "PASS",
+  "original_preservation": "PASS",
+  "publication_readiness": "LOCAL_PUBLIC_CANDIDATE_READY",
+  "remote_publication": "NOT_RUN",
+  "remote_CI": "NOT_RUN",
+  "new_full_sweeps": 0,
+  "new_GPU_jobs": 0,
+  "new_model_requests_or_downloads": 0,
+  "paid_API_requests": 0,
+  "existing_environment_installs_or_upgrades": 0,
+  "dependency_installation": "NEW_P3_VENV_ONLY",
+  "external_independent_reproduction": false,
+  "human_external_review": false,
+  "blocked_items": [],
+  "limitations": [
+    "Same machine and OS; base Python 3.11 runtime reused read-only, packages isolated in new venv.",
+    "SVG XML/labels and exact bytes checked; no separate browser/raster rendering of SVG.",
+    "Remote CI, repository availability and publication not checked or run."
+  ],
+  "clean_command_wall_seconds": 32.61,
+  "integrated_driver_wall_seconds": 32.477549896997516,
+  "integrated_driver_CPU_seconds_including_children": 32.3207629,
+  "command_CPU_seconds": 32.45,
+  "peak_RSS_MiB": 386.03125,
+  "tests": {
+    "P1": 17,
+    "P2": 12,
+    "public_archive_tools": 6
+  },
+  "raw_rows_checked": 248000,
+  "summary_numeric_max_absolute_difference": 0.0,
+  "summary_files_byte_identical": 9,
+  "figure_files_byte_identical": 14,
+  "restored_files_checked": 530,
+  "restored_bytes": 143834303
+}

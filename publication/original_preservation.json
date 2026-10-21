@@ -1,0 +1,13 @@
+{
+  "original_preservation": "PASS",
+  "protected_files": 558,
+  "protected_bytes": 144133880,
+  "changed": [],
+  "added": [],
+  "missing": [],
+  "git_unchanged": true,
+  "baseline_sha256": "26b6ebd4e9b7aabe058d3a9e408efd4ff9b3bfa91fdd5ebcb0f71e9840409e83",
+  "checked_at_utc": "2026-10-21T07:56:30Z",
+  "original_git_unchanged": true,
+  "note": "558 original files, previous handoffs and external P2 rebuild compared to P3-entry path/bytes/SHA inventory. Original HEAD/branch/status/remotes unchanged. Original absolute paths remain in local validation evidence only."
+}

@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+set -euo pipefail
+teg_root="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+if [[ -n "${TEG_PYTHON:-}" ]]; then
+  teg_python="$TEG_PYTHON"
+elif [[ -x "$teg_root/.venv/bin/python" ]]; then
+  teg_python="$teg_root/.venv/bin/python"
+else
+  teg_python=python3
+fi
+unset PYTHONPATH PYTHONHOME
+export PYTHONNOUSERSITE=1 TEG_PROJECT_ROOT="$teg_root"
+export MPLBACKEND=Agg
+export OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1 MKL_NUM_THREADS=1
+export BLIS_NUM_THREADS=1 VECLIB_MAXIMUM_THREADS=1 NUMEXPR_NUM_THREADS=1
+exec "$teg_python" -I -B -m teacher_error_geometry "$@"
