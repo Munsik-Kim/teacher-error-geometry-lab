@@ -4,6 +4,8 @@ A CPU reproduction of teacher–student regression theory
 
 [한국어](README.ko.md)
 
+[Public repository](https://github.com/Munsik-Kim/teacher-error-geometry-lab) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
+
 An independent CPU implementation of linear teacher–student regression theory. Controlled experiments vary input correlation and the information available to the student. A separate experiment reproduces one Gaussian regression setting from the paper and compares measured population risks with analytical expectations.
 
 We examine how teacher errors of the same population size reach the student's true-signal risk. The implementation covers Gaussian data and teacher targets, FP64 unregularized OLS, population risk, paired statistical comparisons, and recorded-data reproduction tools. NumPy/lstsq and Matplotlib are upstream components.
@@ -26,7 +28,7 @@ python3.11 -m venv .venv
 .venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW_ID
 ```
 
-The single command runs 17 P1, 12 P2 and 6 archive/tool tests, restores the lossless evidence, checks all 248,000 canonical fit rows, replays selected seeds, and regenerates summaries plus seven PNG/SVG figures. Outputs and new receipts stay outside the repository. [Reproduction guide](docs/REPRODUCTION.md) explains restore-only and individual summary/figure commands. [P3 validation](docs/P3_REPORT.md) distinguishes same-machine clean-copy checks from external reproduction. CI is prepared locally; remote CI and publication have not run.
+The single command runs 17 P1, 12 P2 and 6 archive/tool tests, restores the lossless evidence, checks all 248,000 canonical fit rows, replays selected seeds, and regenerates summaries plus seven PNG/SVG figures. Outputs and new receipts stay outside the repository. [Reproduction guide](docs/REPRODUCTION.md) explains restore-only and individual summary/figure commands. [P3 validation](docs/P3_REPORT.md) records the earlier local clean-copy stage. Hosted Ubuntu 24.04 CPU checks and the first failed run are recorded in the [publication history](docs/PUBLICATION_HISTORY.md); final commit/check links belong to the release record. Hosted CPU execution is separate from human independent review.
 
 ## Optional new experiments
 
@@ -39,4 +41,4 @@ scripts/teg run --config configs/p1.json --output /tmp/teg-p1-full-NEW_ID
 scripts/teg p2 run --config configs/p2_paper_anchor.json --output /tmp/teg-p2-full-NEW_ID
 ```
 
-`scripts/teg` selects explicit `TEG_PYTHON`, then project `.venv`, then active `python3`; install the package into that interpreter first. It limits child BLAS threads to one. [MIT license](LICENSE) covers independent project work; the paper retains its own rights ([NOTICE](NOTICE)). Local public candidate only; no remote repository or release is asserted.
+`scripts/teg` selects explicit `TEG_PYTHON`, then project `.venv`, then active `python3`; install the package into that interpreter first. It limits child BLAS threads to one. [MIT license](LICENSE) covers independent project work; the paper retains its own rights ([NOTICE](NOTICE)). Frozen scientific execution versions and this repository's public Git history remain distinct.

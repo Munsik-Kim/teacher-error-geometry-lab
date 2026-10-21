@@ -1,6 +1,6 @@
 {
   "identity": "P3 public candidate active source; distinct from P1/P2 historical execution bundles and archive hash",
-  "source_bundle_sha256": "06721cc9417a3c202996885484c80c9a3334f81b763c226cb2dbfe2f4f22ee8d",
+  "source_bundle_sha256": "a8ad1a69cacef3cdeb204815363c71eda18c8246d9e7e7b0c884a16cf20fa42c",
   "definition": "SHA256 canonical JSON source_manifest list, sort_keys=True,separators=(comma,colon), sorted by relative path. Active code/config/tests/tools/build/CI/license files; excludes historical evidence/results/documentation.",
   "source_manifest": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/cpu.yml",
-      "bytes": 1640,
-      "sha256": "4bfdc5c00088ff6a1a3fa04bfd7ffeb37549689b35511e20edece0f11dc618c6"
+      "bytes": 1666,
+      "sha256": "4b551218b77f3901a308b30f8f36ec7d36c5753dd68654cfdab64f751ee06489"
     },
     {
       "path": ".gitignore",
@@ -190,8 +190,8 @@
     },
     {
       "path": "src/teacher_error_geometry/public_validation.py",
-      "bytes": 11183,
-      "sha256": "52ce474c5433c8b468823f226602a06fe25905bdd4fd6df0e3e6d0ca5dc940ca"
+      "bytes": 12107,
+      "sha256": "491060e326c066f2e5c78bc9a2efb02200c62f1c32f050e7f657b89570dd0e8f"
     },
     {
       "path": "src/teacher_error_geometry/risk.py",

@@ -6,6 +6,7 @@ import json
 import math
 import os
 from pathlib import Path
+import platform
 import re
 import resource
 import site
@@ -29,6 +30,17 @@ def read(path):
 
 def write(path, data):
     Path(path).write_text(json.dumps(data, indent=2, ensure_ascii=False, allow_nan=False) + "\n", encoding="utf-8")
+
+
+def execution_context():
+    """Describe this execution without assuming it shares the research machine."""
+    cpuinfo = Path("/proc/cpuinfo")
+    lines = cpuinfo.read_text().splitlines() if cpuinfo.is_file() else []
+    cpu = next((line.split(":", 1)[1].strip() for line in lines if line.startswith("model name")), platform.processor())
+    return {"hosted_CI": os.environ.get("GITHUB_ACTIONS") == "true", "platform": platform.platform(),
+            "machine": platform.machine(), "cpu": cpu, "libc": list(platform.libc_ver()),
+            "same_machine_as_original": None,
+            "scope": "Execution metadata only; machine identity is not inferred from matching results."}
 
 
 def compare_values(left, right, stats, label="root"):
@@ -112,6 +124,8 @@ def verify_public(project, output):
     output.mkdir(parents=True, exist_ok=False)
     start = time.perf_counter(); cpu = time.process_time()
     child_before = resource.getrusage(resource.RUSAGE_CHILDREN)
+    context = execution_context()
+    write(output/"environment.json", context)
     env = os.environ.copy()
     for key in ("PYTHONPATH", "PYTHONHOME", "TEG_PROJECT_ROOT"):
         env.pop(key, None)
@@ -137,7 +151,7 @@ def verify_public(project, output):
         run = subprocess.run(command, cwd=project, env=env, text=True, capture_output=True)
         (output/log).write_text(run.stdout+run.stderr, encoding="utf-8")
         if run.returncode:
-            raise RuntimeError("Public check failed; inspect " + str(output/log))
+            raise RuntimeError("Public check failed; inspect " + str(output/log) + "\n" + (run.stdout+run.stderr)[-12000:])
         return run, time.perf_counter()-tick
 
     suites = []
@@ -188,8 +202,9 @@ def verify_public(project, output):
                "raw_rows_checked": sum(p["raw_rows"] for p in phases.values()),
                "tolerance": TOL, "python": sys.version, "packages": packages,
                "isolated_python": bool(sys.flags.isolated), "user_site_enabled": site.ENABLE_USER_SITE,
-               "same_machine_and_OS_as_original": True, "external_independent_reproduction": False,
-               "new_full_sweeps": 0, "remote_publication": "NOT_RUN", "network_required_for_recorded_check": False,
+               "same_machine_and_OS_as_original": None, "execution_environment": context,
+               "external_independent_reproduction": False, "human_independent_review": False,
+               "new_full_sweeps": 0, "remote_publication": "NOT_PERFORMED_BY_VERIFIER", "network_required_for_recorded_check": False,
                "wall_seconds": time.perf_counter()-start,
                "cpu_seconds_including_children": time.process_time()-cpu + child_after.ru_utime+child_after.ru_stime-child_before.ru_utime-child_before.ru_stime,
                "peak_child_rss_mib": child_after.ru_maxrss/1024,

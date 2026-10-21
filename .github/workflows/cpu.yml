@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 jobs:
   recorded:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
@@ -28,7 +28,7 @@ jobs:
           import os
           from pathlib import Path
           root = Path(os.environ["RUNNER_TEMP"]) / "teg-public"
-          paths = [*root.glob("*.log"), *root.glob("p*/verification.json"), *root.glob("p*/worker.json"), root / "report.json"]
+          paths = [*root.glob("*.log"), *root.glob("p*/verification.json"), *root.glob("p*/worker.json"), root / "environment.json", root / "report.json"]
           for path in sorted(paths):
               if path.is_file():
                   print("RECEIPT", path.relative_to(root), flush=True)

@@ -4,6 +4,8 @@
 
 [English](README.md)
 
+[공개 저장소](https://github.com/Munsik-Kim/teacher-error-geometry-lab) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
+
 교사 모델의 오류를 학생이 어떻게 물려받는지 다룬 기존 선형 이론을 CPU로 독립 구현했습니다. 입력 상관과 학생이 볼 수 있는 정보 범위를 조절한 실험, 원문 Gaussian 회귀 설정 일부의 수치 재현을 통해 실제 반복 결과와 해석식을 대조했습니다.
 
 같은 모집단 크기의 교사 오류가 학생의 실제 정답 오차에 어떻게 전달되는지 확인합니다. Gaussian 생성·교사 target·FP64 무규제 OLS·모집단 risk·paired 통계 대조·저장 기록 재현 도구를 직접 작성했습니다. NumPy/lstsq와 Matplotlib는 upstream입니다.
@@ -26,7 +28,7 @@ python3.11 -m venv .venv
 .venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW_ID
 ```
 
-단일 명령으로 P1 17개·P2 12개·압축/도구 6개 검사를 수행하고, 증거를 복원해 최종 raw 248,000행 전체·선택 seed를 검산하며 summary와 7종 PNG/SVG를 재생성합니다. 새 receipt는 저장소 밖에 씁니다. 압축 복원만 하거나 개별 summary/그림을 만드는 명령은 [재현 안내](docs/REPRODUCTION.md)에 있습니다. [P3 보고서](docs/P3_REPORT.ko.md)는 같은 머신의 새 venv/copy 점검과 외부 독립 재현을 구분합니다. CI는 로컬 초안이며 원격 실행·게시는 미실행입니다.
+단일 명령으로 P1 17개·P2 12개·압축/도구 6개 검사를 수행하고, 증거를 복원해 최종 raw 248,000행 전체·선택 seed를 검산하며 summary와 7종 PNG/SVG를 재생성합니다. 새 receipt는 저장소 밖에 씁니다. 압축 복원만 하거나 개별 summary/그림을 만드는 명령은 [재현 안내](docs/REPRODUCTION.md)에 있습니다. [P3 보고서](docs/P3_REPORT.ko.md)는 과거 로컬 clean-copy 단계를 기록합니다. Hosted Ubuntu 24.04 CPU 검사와 최초 실패 이력은 [게시 이력](docs/PUBLICATION_HISTORY.md)에 남겼으며 최종 commit/CI 링크는 릴리스 기록에서 확인합니다. Hosted CPU 실행은 사람의 독립 심사와 구분합니다.
 
 ## 선택적인 새 실험
 
@@ -39,4 +41,4 @@ scripts/teg run --config configs/p1.json --output /tmp/teg-p1-full-NEW_ID
 scripts/teg p2 run --config configs/p2_paper_anchor.json --output /tmp/teg-p2-full-NEW_ID
 ```
 
-wrapper는 명시적 `TEG_PYTHON`, 프로젝트 `.venv`, 현재 `python3` 순으로 선택합니다. 해당 Python에 먼저 설치해야 합니다. 자식 BLAS thread는 1입니다. [MIT](LICENSE)는 독립 작성물에 적용하며 원문 권리는 별도입니다([NOTICE](NOTICE)). 현재 상태는 로컬 공개 후보이고 원격 저장소·release의 존재를 주장하지 않습니다.
+wrapper는 명시적 `TEG_PYTHON`, 프로젝트 `.venv`, 현재 `python3` 순으로 선택합니다. 해당 Python에 먼저 설치해야 합니다. 자식 BLAS thread는 1입니다. [MIT](LICENSE)는 독립 작성물에 적용하며 원문 권리는 별도입니다([NOTICE](NOTICE)). 과학 실행의 동결 버전과 공개 저장소 Git history는 구분합니다.
