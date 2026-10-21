@@ -1,5 +1,6 @@
 """Execute an untouched historical verifier from a newly restored snapshot."""
 import argparse
+import importlib.util
 import json
 import os
 from pathlib import Path
@@ -38,10 +39,26 @@ sys.path.insert(0, str(snapshot / "src"))
 import teacher_error_geometry
 assert snapshot in Path(teacher_error_geometry.__file__).resolve().parents
 start = time.perf_counter()
+metadata_receipt = None
 if args.phase == "p1":
-    from teacher_error_geometry.verification import verify
+    from teacher_error_geometry import verification as module
     from teacher_error_geometry.summary import summarize
     from teacher_error_geometry.plotting import figures
+    helper_spec = importlib.util.spec_from_file_location("_teg_frozen_metadata", Path(__file__).with_name("frozen_cell_metadata.py"))
+    helper = importlib.util.module_from_spec(helper_spec)
+    helper_spec.loader.exec_module(helper)
+    original_validate = module.validate_config
+    recorded_cells = json.loads((run / "provenance/cells.json").read_text())
+
+    def recorded_design(config):
+        global metadata_receipt
+        cells, groups = original_validate(config)
+        cells, groups, metadata_receipt = helper.validated_frozen_plan(cells, groups, recorded_cells, config["tolerance"])
+        return cells, groups
+
+    # Keep exact raw equality and every scientific check in the frozen verifier.
+    module.validate_config = recorded_design
+    verify = module.verify
 else:
     from teacher_error_geometry.p2 import verification as module
     from teacher_error_geometry.p2.analysis import summarize
@@ -76,6 +93,7 @@ receipt = {"phase": args.phase, "implementation_verification": verification["imp
            "wall_seconds": time.perf_counter() - start, "historical_code_root": str(snapshot),
            "original_access_denied": True, "denied_original_open_attempts": len(blocked),
            "full_sweep_executed": False, "figure_count": plots["figure_count"]}
+receipt["recorded_cell_metadata"] = metadata_receipt
 (output / "worker.json").write_text(json.dumps(receipt, indent=2) + "\n")
 print(json.dumps(receipt))
 raise SystemExit(0 if verification["implementation_verification"] == "PASS" else 1)

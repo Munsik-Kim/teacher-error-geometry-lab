@@ -1,5 +1,7 @@
 """Safe fresh-path restoration and numerical comparison contracts."""
 import hashlib
+import copy
+import importlib.util
 import io
 import json
 from pathlib import Path
@@ -11,6 +13,27 @@ from teacher_error_geometry.public_validation import compare_values
 
 
 class ArchiveContract(unittest.TestCase):
+    def test_recorded_metadata_preserves_exact_coefficients_across_roundoff(self):
+        path = Path(__file__).resolve().parents[1]/"scripts/frozen_cell_metadata.py"
+        spec = importlib.util.spec_from_file_location("_test_frozen_metadata", path)
+        helper = importlib.util.module_from_spec(spec); spec.loader.exec_module(helper)
+        saved = [{"config_id": "C_r0_n0_t1", "group_id": "d1_r0_n0", "rho": -.75,
+                  "delta1": .7071067811865477, "delta2": .7071067811865476}]
+        current = copy.deepcopy(saved)
+        import numpy as np
+        current[0]["delta1"] = float(np.nextafter(saved[0]["delta1"], np.inf))
+        groups = [{"group_id": "d1_r0_n0", "cells": current}]
+        tol = {"atol": 1e-10, "rtol": 1e-9}
+        fixed, paired, receipt = helper.validated_frozen_plan(current, groups, saved, tol)
+        self.assertEqual(fixed, saved)
+        self.assertEqual(paired[0]["cells"], saved)
+        self.assertNotEqual(current[0]["delta1"], fixed[0]["delta1"])
+        self.assertEqual(receipt["historical_raw_equality_check"], "UNCHANGED_EXACT_EQUALITY")
+        bad = copy.deepcopy(saved); bad[0]["delta1"] += 1e-4
+        with self.assertRaises(ValueError): helper.validated_frozen_plan(current, groups, bad, tol)
+        bad = copy.deepcopy(saved); bad[0]["rho"] = .75
+        with self.assertRaises(ValueError): helper.validated_frozen_plan(current, groups, bad, tol)
+
     def fixture(self, root, kind="regular", duplicate=False):
         project = root/"project"; (project/"evidence").mkdir(parents=True)
         payload = b"immutable\n"

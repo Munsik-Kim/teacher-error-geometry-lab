@@ -28,7 +28,7 @@ python3.11 -m venv .venv
 .venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW_ID
 ```
 
-The single command runs 17 P1, 12 P2 and 6 archive/tool tests, restores the lossless evidence, checks all 248,000 canonical fit rows, replays selected seeds, and regenerates summaries plus seven PNG/SVG figures. Outputs and new receipts stay outside the repository. [Reproduction guide](docs/REPRODUCTION.md) explains restore-only and individual summary/figure commands. [P3 validation](docs/P3_REPORT.md) records the earlier local clean-copy stage. Hosted Ubuntu 24.04 CPU checks and the first failed run are recorded in the [publication history](docs/PUBLICATION_HISTORY.md); final commit/check links belong to the release record. Hosted CPU execution is separate from human independent review.
+The single command runs 17 P1, 12 P2 and 7 archive/tool tests, restores the lossless evidence, checks all 248,000 canonical fit rows, replays selected seeds, and regenerates summaries plus seven PNG/SVG figures. Outputs and new receipts stay outside the repository. [Reproduction guide](docs/REPRODUCTION.md) explains restore-only and individual summary/figure commands. [P3 validation](docs/P3_REPORT.md) records the earlier local clean-copy stage. Hosted Ubuntu 24.04 CPU checks and the first failed run are recorded in the [publication history](docs/PUBLICATION_HISTORY.md); final commit/check links belong to the release record. Hosted CPU execution is separate from human independent review.
 
 ## Optional new experiments
 
