@@ -1,0 +1,90 @@
+{
+  "files": [
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/audit/preservation_after.json",
+      "bytes": 440331,
+      "sha256": "3c1825e6356dbe59a965292ff70c3e8f63655bfcd8334f8ac1cafd409385a8d8"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/facts.json",
+      "bytes": 11412,
+      "sha256": "4e4d9b2cb01d08db681c49ec1581385b1fdb3c9a69f50a0e601bb7cfc467dcd4"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/manifest.json",
+      "bytes": 39843,
+      "sha256": "d176edd96532d2e0bb690abe1948caebaf7c6f287ba79ab1faf8581031c9bc39"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/F2R_PROTOCOL.json",
+      "bytes": 8660,
+      "sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/cache/qualification.npy",
+      "bytes": 4718720,
+      "sha256": "e10f9adabf5425838ad939f9e2cb7f6be845c77e38ac457e0355f19ec117d1ff"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/cache/train0.npy",
+      "bytes": 4718720,
+      "sha256": "37ed140d14010bb538b445d3d515f7ecc84823c6ac3c39fe51047a1ca1cc5e39"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/geometry/errors.json",
+      "bytes": 7685,
+      "sha256": "85c18e276afed95b06f720d866476bb1072e14cf1c835607d0a2ecaa375ad0e3"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/geometry/transform.json",
+      "bytes": 1051351,
+      "sha256": "26751c4c131b89e977b62f5a3e9a78fe69124d6fe5bb358dce20839b1eeb20a3"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/qualification_feature_receipt.json",
+      "bytes": 601,
+      "sha256": "0b0d595e3b57ee8596b25e22fb805db70a304a94d3129ebacca79bc8b769013f"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/qualification_feature_rows.json",
+      "bytes": 1281814,
+      "sha256": "dfa5ef3ec8994802fb9092d003c080687fb6f439a4956358a966ce18dbb91c08"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/train0_feature_receipt.json",
+      "bytes": 592,
+      "sha256": "ebbe105c29d1edf5aad5a976a0aac6958cb52b6fc306c32209bf62e2a036abb0"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/train0_feature_rows.json",
+      "bytes": 1281730,
+      "sha256": "dd6fc419ce58caf0dc032f377ab279236d19e8a373cd619abe80d2cd170dc05f"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/provenance/source_freeze.json",
+      "bytes": 3368,
+      "sha256": "e358146ad74d88fc5276f1bf30f6384d51619994dc71805929f9b549600e1e40"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/qualification/metrics.json",
+      "bytes": 269333,
+      "sha256": "1066368da69c7ef4b4589fbb47cc6bad6e06430498c595746baec93019e90855"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/qualification/pilot_arrays.npz",
+      "bytes": 100346,
+      "sha256": "859e62279441b4515f33fc72203bf3b3def207ef30c97ca1d6996d7ef5203405"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/raw/qualification_records.json",
+      "bytes": 1351013,
+      "sha256": "408894530316dee15e715184c9c2a245e553ede697d7ddaf49953cd9e74e40d2"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/raw/train0_records.json",
+      "bytes": 1334398,
+      "sha256": "0372fdcead7951fb45adfbe18664db0239eab08435d4eb9fa45016fbcae818db"
+    }
+  ],
+  "role": "explicit allowlist; no original modules imported or dataset generator called"
+}

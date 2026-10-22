@@ -1,6 +1,6 @@
 {
   "identity": "P3 public candidate active source; distinct from P1/P2 historical execution bundles and archive hash",
-  "source_bundle_sha256": "a77e5cb94a684aa2759d9be32facb5e26b2d1334b0381f0e8202ec96d2ab4130",
+  "source_bundle_sha256": "7763c49b18f543196bf522fd63b486894d9693d33a06b4bb27e097469f8a3a41",
   "definition": "SHA256 canonical JSON source_manifest list, sort_keys=True,separators=(comma,colon), sorted by relative path. Active code/config/tests/tools/build/CI/license files; excludes historical evidence/results/documentation.",
   "source_manifest": [
     {
@@ -10,8 +10,8 @@
     },
     {
       "path": ".github/workflows/cpu.yml",
-      "bytes": 1666,
-      "sha256": "4b551218b77f3901a308b30f8f36ec7d36c5753dd68654cfdab64f751ee06489"
+      "bytes": 3314,
+      "sha256": "254601791e9beb14e3ca89b59d582577c6cb0e88ed46d124adbf5fab97d8a5b3"
     },
     {
       "path": ".gitignore",
@@ -46,7 +46,7 @@
     {
       "path": "pyproject.toml",
       "bytes": 365,
-      "sha256": "3ae0fb876032e5cf8490b633d5bd248daa2b54fd1cb0464e6c8683a4e836ba00"
+      "sha256": "67b7e5243a050464e819e465b93faf697e751704a763d492c89fadeca46d3642"
     },
     {
       "path": "requirements-lock.txt",
@@ -59,9 +59,19 @@
       "sha256": "394e4bccf864729556a785f59a29e6a2c22ff6536f461f60f2ab62828705f3cd"
     },
     {
+      "path": "scripts/build_closeout_asset.py",
+      "bytes": 9723,
+      "sha256": "58081146b4c5c70f98403685190c01546e3efb69cfaced0180d6020389d7684b"
+    },
+    {
+      "path": "scripts/check_closeout_publication.py",
+      "bytes": 5906,
+      "sha256": "0d67f586d950074201f75b38e01d2f439b069e673a08a840523dd59872ab5a5a"
+    },
+    {
       "path": "scripts/check_public_docs.py",
-      "bytes": 1955,
-      "sha256": "0bc408e2b33beeb5f4784c9a2d80880af821452dba2729d7f546a21e5e7e3c7e"
+      "bytes": 2839,
+      "sha256": "78934453aa81ff047fc50d05d92ad1a7602fa674cd230e61f84c96847b6407ff"
     },
     {
       "path": "scripts/frozen_cell_metadata.py",
@@ -86,7 +96,7 @@
     {
       "path": "src/teacher_error_geometry/__init__.py",
       "bytes": 86,
-      "sha256": "72eac8e52ed4ff3433282b0f73c1d2ddb81aadb64fc92a671137981761668e59"
+      "sha256": "4c403b59d4e7adc34fcc6c25e01dd9bbbd8bef6e88cf96905e26becd25e1954f"
     },
     {
       "path": "src/teacher_error_geometry/__main__.py",

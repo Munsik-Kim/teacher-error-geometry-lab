@@ -1,0 +1,25 @@
+{
+  "files": [
+    {
+      "path": "inputs/data.npz",
+      "bytes": 2435666,
+      "sha256": "366227ea03b1ffad1ca2df91b8319f3eb72c8ad933b62d8c5c6f13c8bcfc4eba"
+    },
+    {
+      "path": "inputs/error_geometry.json",
+      "bytes": 7685,
+      "sha256": "85c18e276afed95b06f720d866476bb1072e14cf1c835607d0a2ecaa375ad0e3"
+    },
+    {
+      "path": "inputs/metadata.json",
+      "bytes": 8513,
+      "sha256": "910aa36a5de4c7021edf448d13d135e98112fc5857dc85c88bd455713297e988"
+    },
+    {
+      "path": "inputs/transform.json",
+      "bytes": 1051351,
+      "sha256": "26751c4c131b89e977b62f5a3e9a78fe69124d6fe5bb358dce20839b1eeb20a3"
+    }
+  ],
+  "self_hash_excluded": true
+}

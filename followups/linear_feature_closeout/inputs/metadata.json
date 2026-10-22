@@ -1,0 +1,220 @@
+{
+  "train0": {
+    "role": "training",
+    "rows": 2048,
+    "raw_cache": {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/cache/train0.npy",
+      "bytes": 4718720,
+      "sha256": "37ed140d14010bb538b445d3d515f7ecc84823c6ac3c39fe51047a1ca1cc5e39"
+    },
+    "original_receipt": {
+      "status": "COMPLETE",
+      "planned_rows": 2048,
+      "completed_rows": 2048,
+      "dtype": "float32",
+      "shape": [
+        2048,
+        576
+      ],
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/features/train0.npy",
+      "sha256": "37ed140d14010bb538b445d3d515f7ecc84823c6ac3c39fe51047a1ca1cc5e39",
+      "bytes": 4718720,
+      "wall_seconds": 25.6518157060018,
+      "final_batch_size": 4,
+      "checkpoint": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "parameter_updates": 0
+    },
+    "scenario_ids_sha256": "2bfcccf616a99bebb7995f2f1911caa10b572f3b054028c6355e516e960fd123",
+    "row_order": "preserved original record/feature receipt order",
+    "canonical_signatures_sha256": "1c31f4a7665ccfad76b32cd057d420353f061219d9bb6a127caafd5356971ff4",
+    "scenario_generation": false,
+    "reconstruction": "transformed existing FP32 cache and evaluated frozen h91 only"
+  },
+  "qualification": {
+    "role": "posthoc_evaluation",
+    "rows": 2048,
+    "raw_cache": {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/cache/qualification.npy",
+      "bytes": 4718720,
+      "sha256": "e10f9adabf5425838ad939f9e2cb7f6be845c77e38ac457e0355f19ec117d1ff"
+    },
+    "original_receipt": {
+      "status": "COMPLETE",
+      "planned_rows": 2048,
+      "completed_rows": 2048,
+      "dtype": "float32",
+      "shape": [
+        2048,
+        576
+      ],
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/gpu/qualification/features/qualification.npy",
+      "sha256": "e10f9adabf5425838ad939f9e2cb7f6be845c77e38ac457e0355f19ec117d1ff",
+      "bytes": 4718720,
+      "wall_seconds": 27.347690341997804,
+      "final_batch_size": 4,
+      "checkpoint": "HuggingFaceTB/SmolLM2-135M",
+      "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+      "parameter_updates": 0
+    },
+    "scenario_ids_sha256": "98824d75bc582b4285de7755f18aef06de0d8583d71b45353af0973e50bbb8da",
+    "row_order": "preserved original record/feature receipt order",
+    "canonical_signatures_sha256": "c5d38e5c3c245abc107daf7009ae46a1671d876ff080b47947f27ebf9d3099b0",
+    "scenario_generation": false,
+    "reconstruction": "transformed existing FP32 cache and evaluated frozen h91 only"
+  },
+  "checkpoint": {
+    "checkpoint": "HuggingFaceTB/SmolLM2-135M",
+    "revision": "93efa2f097d58c2a74874c7e644dbc9b0cee75a2",
+    "parameters": 134515008,
+    "weight_sha256": "80521b40281d6ce74e35c9282c22539e75aa0ac8578892b2a59955ef78d55da1",
+    "config_sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4",
+    "execution_v01_source_bundle": "56a87094179f4524d233f781c4e456751163291f354d196f5c15c9d9cfdd1409",
+    "execution_v02_source_bundle": "15d2f30aa39e41cca54711642709735438c8cecc54b030d73ccd768a09ba4582",
+    "current_delivered_code_bundle": "2da8b44eadddf7aac4c310d56a6f08ac72a9262489f1b5aa70a093884f9fc60d",
+    "transform_sha256": "26751c4c131b89e977b62f5a3e9a78fe69124d6fe5bb358dce20839b1eeb20a3",
+    "error_geometry_sha256": "85c18e276afed95b06f720d866476bb1072e14cf1c835607d0a2ecaa375ad0e3"
+  },
+  "original_execution_source": {
+    "frozen_utc": "2026-10-22T06:09:46.528051+00:00",
+    "files": [
+      {
+        "path": "F2R_PROTOCOL.json",
+        "bytes": 8660,
+        "sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4"
+      },
+      {
+        "path": "scripts/cpu_watchdog_test.py",
+        "bytes": 1036,
+        "sha256": "a5cafce05d49523cff9973e4090a2b275e2beab0f15de3ae5648730ef00c8e53"
+      },
+      {
+        "path": "scripts/f2r.py",
+        "bytes": 505,
+        "sha256": "a42f3a7708058deb6bf27ef7cc1d2bdaa8fc0e5115ecefcf4b23184a86b1594e"
+      },
+      {
+        "path": "scripts/gpu_worker.py",
+        "bytes": 3674,
+        "sha256": "bb66d8d2f375fdae24f0294c24423c38a884f8e5c1253fe9a1940678673ceedc"
+      },
+      {
+        "path": "scripts/preserve_inputs.py",
+        "bytes": 7485,
+        "sha256": "82743ba3ea8fd7039a025a832c2f0c787d964d2c880ac2df2ae2fae1a48c4271"
+      },
+      {
+        "path": "src/teg_f2r/__init__.py",
+        "bytes": 82,
+        "sha256": "9153b4a70bd033bd4a29a0c8dc0f9ed5db2abf7e88ec5272650007b2ae88604c"
+      },
+      {
+        "path": "src/teg_f2r/analysis.py",
+        "bytes": 15465,
+        "sha256": "3194da72e75b31e1894794bf1642739e6a318be90ff4f2e0d0bc786485da8b68"
+      },
+      {
+        "path": "src/teg_f2r/data.py",
+        "bytes": 16918,
+        "sha256": "b716176afe24bbddfc60feaa7a3f82f61c868224f6e86c256f9efebafc974591"
+      },
+      {
+        "path": "src/teg_f2r/gpu.py",
+        "bytes": 18806,
+        "sha256": "480acf1fdedc622f8566a633eec820cbfcc2de8025dd15308d9499c5fc95587c"
+      },
+      {
+        "path": "src/teg_f2r/numerics.py",
+        "bytes": 7920,
+        "sha256": "652c1586d59fbe17f43c433e3e7dd2e96665c0381e58258b75f2e807055642ea"
+      },
+      {
+        "path": "src/teg_f2r/pipeline.py",
+        "bytes": 27513,
+        "sha256": "8bd48a64ef142747edfb31a8e14fab93d160cca093ce179aa65575cc6f462c00"
+      },
+      {
+        "path": "src/teg_f2r/supervision.py",
+        "bytes": 3790,
+        "sha256": "64b93c0fc13967424676839be4b4c7b2639551d944de62641cc7110388857fbd"
+      },
+      {
+        "path": "tests/test_data.py",
+        "bytes": 6572,
+        "sha256": "967984983ec63898e68b796a14d137f0deb5637322df0ecbe0b90a28ff1c4619"
+      },
+      {
+        "path": "tests/test_gpu_contract.py",
+        "bytes": 2601,
+        "sha256": "d011cac7be123193d5b129b9602098870e379b1507568e936cfb78a6e9759c8a"
+      },
+      {
+        "path": "tests/test_numerics.py",
+        "bytes": 6744,
+        "sha256": "97115dca73d9e86573dcce62be9bdce08bdbe57142a0e323f81e71d369440cde"
+      },
+      {
+        "path": "tests/test_pipeline.py",
+        "bytes": 6102,
+        "sha256": "1932dca609cdffa77cb8e14d499d5d45122259e2ffc993e32fd039d06616f000"
+      },
+      {
+        "path": "tests/test_replay_io.py",
+        "bytes": 1516,
+        "sha256": "1dadda18dc3516430fff13936c18ee43ff6771707214e8fb6a2d1bc9ccc4a2db"
+      },
+      {
+        "path": "tests/test_supervision.py",
+        "bytes": 1932,
+        "sha256": "ecadf5d11494b39ae21522c81e122e356444e7583612992aab25d58ad05af18c"
+      }
+    ],
+    "bundle_sha256": "15d2f30aa39e41cca54711642709735438c8cecc54b030d73ccd768a09ba4582",
+    "config_sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4",
+    "fresh_data_generated_before_initial_protocol_freeze": false,
+    "recovery_inputs_already_materialized_before_this_source_version": true,
+    "recovery_source": "results/f2r_run_20261022T055149Z",
+    "posthoc_F2D_selection_known": true,
+    "old_test_prefix128_reconstruction_before_freeze": true
+  },
+  "original_protocol_sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4",
+  "original_status": {
+    "execution": "COMPLETE_QUALIFICATION_STOP",
+    "implementation": "PASS",
+    "qualification": {
+      "A": true,
+      "B": false,
+      "C": true,
+      "D": true,
+      "E": true
+    },
+    "main": {
+      "planned_main_cells": 80,
+      "attempted_main_cells": 0,
+      "valid_main_cells": 0,
+      "failed_main_cells": 0,
+      "missing_main_cells": 80,
+      "reused_main_cells": 0,
+      "qualification_pilot_solver_calls": 1,
+      "unique_experiment_fit_objects": 1,
+      "main_status": "NOT_RUN_CONDITIONAL_GATE_FAILED"
+    },
+    "final": "NOT_RUN",
+    "H1": "NOT_RUN",
+    "H2": "NOT_RUN",
+    "H3": "NOT_RUN",
+    "D_over_c2": null,
+    "interval95": null
+  },
+  "gold_normalization": "score / sqrt(110/3); population score mean 0",
+  "original_preservation_status": "PASS",
+  "estimand_scope": "one already-used train dataset / reused qualification; posthoc, not H1 final",
+  "original_gold_reuse": true,
+  "gold_lstsq_calls": 0,
+  "official_test_generated": false,
+  "errors_columns": [
+    "high_positive",
+    "low_positive"
+  ],
+  "prefix128_reconstructed": false
+}

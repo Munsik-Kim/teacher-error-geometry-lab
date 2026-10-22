@@ -1,42 +1,73 @@
 # Teacher Error Geometry Lab
 
-Implemented CPU experiments and verification tools to test how a teacher model’s errors affect a student’s predictions. The project compares repeated simulations with analytical results from existing linear regression theory.
+**How does the direction of a teacher's error affect a student's error against the true target?** This project independently implements existing linear teacher–student regression theory and compares analytical risks with actual fitted students. It provides Gaussian generators, teacher targets, FP64 OLS, population-risk calculations, paired summaries and tools that rebuild results from saved records. **248,000 canonical fitted-student records** are preserved for CPU verification.
 
-**Munsik Kim** · [한국어](README.ko.md)
+**Munsik Kim** · [한국어](README.ko.md) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
 
-[Public repository](https://github.com/Munsik-Kim/teacher-error-geometry-lab) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
+![P1 truth risk by sample size: analytical curves and recorded means with pointwise 95% intervals](recorded/p1/figures/01_truth_by_n.png)
 
-The experiments vary input correlation and the information available to the student, then compare errors against both the teacher and the true target. The implementation covers Gaussian data generation, teacher targets, FP64 ordinary least-squares fitting, population risk, paired comparisons and saved-result verification. NumPy/lstsq and Matplotlib are upstream components.
+In P1 at rho=0 and n=30, visible teacher error gives student truth MSE **0.250000** even when teacher-agreement MSE is effectively zero. Hidden error gives **0.008461**, against an analytical expectation of **0.008929**. Agreement with the teacher and accuracy against truth are different measurements.
 
-![P1 truth risk by sample size: theory curves and measured means with pointwise 95% intervals](recorded/p1/figures/01_truth_by_n.png)
+## What was reproduced
 
-At rho=0 and n=30, visible teacher error gives measured truth risk 0.25 despite teacher-agreement MSE about 1.5e-31. Hidden error gives 0.00846083145254395 (expectation 0.008928571428571428). P1 contains 84 settings × 2,000 repetitions, 168,000 fits on 62,000 datasets. P2 uses 20,000 shared datasets for 80,000 fits; RM has the smallest measured mean in this fixed setting, 0.20767895944476805 (expectation 0.20687515217391308). See [results and limits](docs/RESULTS.md) and [full-precision facts](data/results.json).
+The source is Agus Sudjianto and Denis Burakov, [*Teacher Supervision, Fixed Representations and Calibration: Exact Risk Calculations for Candidate-Scoring Decision Models*, arXiv:2610.26797v1](https://arxiv.org/html/2610.26797v1).
 
-P1 is an independently controlled two-dimensional special case of §4.2; P2 partially reproduces the n=27, lambda=.45 Gaussian setting in Table 1 of [Sudjianto and Burakov, arXiv:2610.26797v1](https://arxiv.org/html/2610.26797v1). See the [claim map](docs/claim_map.md) and [history](docs/HISTORY.md). The scope excludes the full paper, learned representations, LLMs, probit and CFPB. Implementation and internal checks were AI-assisted; no external human review or bitwise copy of the paper's PyTorch samples is claimed.
+- **P1:** a controlled two-dimensional Gaussian special case of §4.2. The 84 settings contain 168,000 canonical fits on 62,000 datasets.
+- **P2:** the d=5, r=3, n=27, lambda=0.45 Gaussian setting from Table 1. Four regression methods share 20,000 datasets and produce 80,000 fits.
 
-## Install and verify stored results
+| P2 method | Analytical expected truth risk | Recorded mean |
+|---|---:|---:|
+| Full input / outcome (FO) | 0.309524 | 0.310155 |
+| Full input / teacher (FT) | 0.404467 | 0.403867 |
+| Reduced input / outcome (RO) | 0.260000 | 0.259864 |
+| Reduced input / mixed target (RM) | 0.206875 | 0.207679 |
 
-Run from the repository root with Python 3.11. Installation downloads only the declared CPU dependencies; verification is offline and requires no original research directory. Use a fresh external output name each time.
+The implementation separates fitted risk from expected risk and checks them through independent calculations. Historical verification covers **36 CPU tests and 248,000 canonical fit rows**. [Results](docs/RESULTS.md), [full-precision facts](data/results.json) and the [paper-to-code map](docs/claim_map.md) preserve the exact values and assumptions.
+
+## Frozen Transformer feature appendix
+
+The [linear-feature appendix](followups/linear_feature_closeout/README.md) uses saved SmolLM2-135M features to examine the same linear readout mechanism on nonGaussian inputs. Its diagnostics found that expanding PCA16 to PCA64 improved gold-only validation MSE from **0.300690 to 0.175955**. A later independent qualification stopped because a teacher-error norm missed its registered control range.
+
+A separate four-fit post-hoc analysis retained the original errors.
+
+| Error direction | Truth risk, ± average | Error-energy transfer ratio G |
+|---|---:|---:|
+| High | 0.4164 | 1.0000 |
+| Low | 0.1992 | 0.0619 |
+
+These are descriptive results for one training dataset and a reused qualification set; G is an energy ratio, not accuracy. The registered H1 main experiment and final evaluation remain unrun, and neither earlier stop becomes a pass.
+
+## Two CPU reproduction paths
+
+Run from the repository root with Python 3.11. Install the declared CPU environment once; neither path needs model weights, a GPU or the original research checkout.
 
 ```bash
 python3.11 -m venv .venv
 .venv/bin/python -I -m pip install -r requirements-lock.txt
 .venv/bin/python -I -m pip install --no-build-isolation --no-deps .
 .venv/bin/python -I -m pip check
-.venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW_ID
 ```
 
-The single command runs 17 P1, 12 P2 and 7 archive/tool tests, restores the lossless evidence, checks all 248,000 canonical fit rows, replays selected seeds, and regenerates summaries plus seven PNG/SVG figures. Outputs and new receipts stay outside the repository. [Reproduction guide](docs/REPRODUCTION.md) explains restore-only and individual summary/figure commands. [P3 validation](docs/P3_REPORT.md) records the earlier local clean-copy stage. Hosted Ubuntu 24.04 CPU checks and the first failed run are recorded in the [publication history](docs/PUBLICATION_HISTORY.md); final commit/check links belong to the release record. Hosted CPU execution is separate from human independent review.
-
-## Optional new experiments
-
-These commands are separate from stored-result verification. They create new runs and are not part of P3.
+**Paper records:** restore the evidence, check saved P1/P2 rows, replay selected seeds and rebuild summaries/figures without rerunning the full sweeps.
 
 ```bash
-scripts/teg smoke --output /tmp/teg-p1-smoke-NEW_ID
-scripts/teg p2 smoke --output /tmp/teg-p2-smoke-NEW_ID
-scripts/teg run --config configs/p1.json --output /tmp/teg-p1-full-NEW_ID
-scripts/teg p2 run --config configs/p2_paper_anchor.json --output /tmp/teg-p2-full-NEW_ID
+.venv/bin/python -I -B -m teacher_error_geometry verify-public --output /tmp/teg-public-NEW
 ```
 
-`scripts/teg` selects explicit `TEG_PYTHON`, then project `.venv`, then active `python3`; install the package into that interpreter first. It limits child BLAS threads to one. [MIT license](LICENSE) covers independent project work; the paper retains its own rights ([NOTICE](NOTICE)). Frozen scientific execution versions and this repository's public Git history remain distinct.
+**Feature appendix:** verify frozen coefficients and predictions with independent QR calculations, then rebuild its tables and figures with zero new fits.
+
+```bash
+.venv/bin/python -I -B followups/linear_feature_closeout/scripts/check_package.py
+.venv/bin/python -I -B followups/linear_feature_closeout/scripts/closeout.py verify --run followups/linear_feature_closeout/results/closure_posthoc_01 --output /tmp/teg-feature-verify-NEW
+.venv/bin/python -I -B followups/linear_feature_closeout/scripts/closeout.py summarize --run followups/linear_feature_closeout/results/closure_posthoc_01 --output /tmp/teg-feature-summary-NEW
+```
+
+Use a new, absent external output path for every command. The appendix has nine synthetic-array tests and 53 recorded numerical checks; these are separate from the historical 36-test paper verifier.
+
+## Read the evidence
+
+- [Paper reproduction guide](docs/REPRODUCTION.md) · [Theory](docs/theory.md) · [Original execution history](docs/HISTORY.md)
+- [Final linear-reproduction report](followups/linear_feature_closeout/FINAL_REPORT.md) · [Appendix reproduction guide](followups/linear_feature_closeout/REPRODUCTION.md)
+- [Consolidated provenance and access history](followups/linear_feature_closeout/PROVENANCE_AND_HISTORY.md) · [Publication history](docs/PUBLICATION_HISTORY.md)
+
+The scope is Gaussian regression and linear students on fixed pretrained features; detailed assumptions and unrun extensions are collected in the [consolidated history](followups/linear_feature_closeout/PROVENANCE_AND_HISTORY.md). NumPy/lstsq and Matplotlib are upstream, and implementation/internal checks were AI-assisted. [MIT](LICENSE) covers independent project work; paper and upstream rights remain separate ([NOTICE](NOTICE)).

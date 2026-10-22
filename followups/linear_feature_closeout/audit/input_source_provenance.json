@@ -1,0 +1,78 @@
+{
+  "scope": "Old source consulted as text only. Independent closure input-preparation arithmetic; no original imports, generator calls, model calls or fitting.",
+  "reference_files": [
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/scripts/preserve_inputs.py",
+      "bytes": 7485,
+      "sha256": "82743ba3ea8fd7039a025a832c2f0c787d964d2c880ac2df2ae2fae1a48c4271"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/src/teg_f2r/numerics.py",
+      "bytes": 7920,
+      "sha256": "652c1586d59fbe17f43c433e3e7dd2e96665c0381e58258b75f2e807055642ea"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/src/teg_f2r/gpu.py",
+      "bytes": 18806,
+      "sha256": "480acf1fdedc622f8566a633eec820cbfcc2de8025dd15308d9499c5fc95587c"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/results/f2r_run_20261022T055149Z_02/provenance/executed_source_snapshot/src/teg_f2r/data.py",
+      "bytes": 16918,
+      "sha256": "b716176afe24bbddfc60feaa7a3f82f61c868224f6e86c256f9efebafc974591"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/manifest.json",
+      "bytes": 39843,
+      "sha256": "d176edd96532d2e0bb690abe1948caebaf7c6f287ba79ab1faf8581031c9bc39"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/source_manifest.json",
+      "bytes": 3352,
+      "sha256": "ab056cecf535aec694b3a5eff306b95bbea834372710d3c4b611578ccd805190"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/result_manifest.json",
+      "bytes": 35342,
+      "sha256": "c400b0241826fa26eb1f1f43e6e6742f4ec088f86235d339eee8a6331a1c83cd"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/facts.json",
+      "bytes": 11412,
+      "sha256": "4e4d9b2cb01d08db681c49ec1581385b1fdb3c9a69f50a0e601bb7cfc467dcd4"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/audit/preservation_after.json",
+      "bytes": 440331,
+      "sha256": "3c1825e6356dbe59a965292ff70c3e8f63655bfcd8334f8ac1cafd409385a8d8"
+    },
+    {
+      "path": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/audit/read_set_manifest.json",
+      "bytes": 14977,
+      "sha256": "c8980da5e8fac3ebb4728e5f2b632af7ca8c1e737a53706fec985d1e7aed4e2c"
+    }
+  ],
+  "dependency_notes": [
+    "Original per-feature-row hash prefixes dtype and compact JSON shape before bytes; closure validator preserves that definition.",
+    "Original h91/PCA64/error normalization formulas and original coefficient are frozen input contracts.",
+    "Original preservation helper supplied inventory scope; closure helper independently captures before/after and includes F2R206."
+  ],
+  "preparation_attempts": [
+    {
+      "result": "OUTPUT_EXISTS safeguard",
+      "stage": "before any input artifact write",
+      "reason": "Parent had created empty inputs directory; changed guard to allow existing empty directory."
+    },
+    {
+      "result": "ROW_FEATURE_HASH_MISMATCH",
+      "stage": "before any input artifact write",
+      "reason": "Initial validator used raw bytes only, whereas original receipt hash includes dtype and shape. Corrected validator to documented historical hash definition."
+    },
+    {
+      "result": "PASS",
+      "receipt": "audit/input_preparation_receipt.json",
+      "four_teacher_target_fit_results_observed": false
+    }
+  ],
+  "historical_outputs_modified": false
+}

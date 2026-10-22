@@ -1,0 +1,16 @@
+{
+  "action": "summarize",
+  "wall_seconds": 0.7937742499998421,
+  "CPU_seconds": 0.6500653999999999,
+  "peak_RSS_KiB": 87800,
+  "Python": "3.11.15 | packaged by conda-forge | (main, Mar  5 2026, 16:45:40) [GCC 14.3.0]",
+  "executable": "/home/mskim/Codex_main/teacher-error-geometry-transformer-followup-20261022T013647Z/.venv/bin/python",
+  "NumPy": "1.26.4",
+  "OS": "Linux-5.15.167.4-microsoft-standard-WSL2-x86_64-with-glibc2.39",
+  "BLAS_threads": 1,
+  "no_user_site_flag": 1,
+  "old_project_modules_imported": [],
+  "Torch_imported": false,
+  "GPU_forward_calls": 0,
+  "new_case_generation": 0
+}

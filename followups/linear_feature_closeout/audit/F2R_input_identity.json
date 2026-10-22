@@ -1,0 +1,14 @@
+{
+  "status": "PASS",
+  "F2R_manifest_files": 205,
+  "F2R_inventory_including_manifest": 206,
+  "root_manifest_mismatch": [],
+  "executed_snapshot_files": 18,
+  "snapshot_mismatch": [],
+  "executed_source_bundle": "15d2f30aa39e41cca54711642709735438c8cecc54b030d73ccd768a09ba4582",
+  "source_bundle_recomputed": "15d2f30aa39e41cca54711642709735438c8cecc54b030d73ccd768a09ba4582",
+  "source_bundle_equal": true,
+  "config_sha256": "4045f0cb6a54d99f305b51634cc6adbb492eeec1ca9c769b6a84ba9e297fc0f4",
+  "all_checks_from_capture": "audit/preservation_before.json; no fits/tests/model calls",
+  "old_files_written": false
+}

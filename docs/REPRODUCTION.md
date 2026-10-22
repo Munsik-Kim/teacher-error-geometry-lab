@@ -22,6 +22,13 @@ For full recorded integrity and seed checks use `verify-public`; directly invoki
 
 ## Optional future smoke/full
 
-[README optional commands](../README.md#optional-new-experiments) create new outputs using the portable public source. They are opt-in, not CI or P3 steps. The two JSON configs remain the completed experiment settings. Fresh results would have a new source freeze and must not be represented as the old recorded execution.
+These optional commands create new outputs using the portable public source. They are not CI or stored-record verification steps. The two JSON configs remain the completed experiment settings. Fresh results have a new source freeze and must not be represented as the old recorded execution.
+
+```bash
+scripts/teg smoke --output /tmp/teg-p1-smoke-NEW
+scripts/teg p2 smoke --output /tmp/teg-p2-smoke-NEW
+scripts/teg run --config configs/p1.json --output /tmp/teg-p1-full-NEW
+scripts/teg p2 run --config configs/p2_paper_anchor.json --output /tmp/teg-p2-full-NEW
+```
 
 A Python wheel contains code, not the 21MiB evidence; verification needs a checkout of the public files. Installation needs a package index or matching local wheels. After installation, recorded verification needs neither network, original research files nor an existing conda environment. The P3 test uses a new venv and new public copy on the same machine/OS, not another machine's independent execution.

@@ -1,0 +1,21 @@
+{
+  "scope": "v0.2.0 current public appendix files; not a historical execution freeze",
+  "files": [
+    {
+      "path": "CLOSURE_PROTOCOL.json",
+      "bytes": 5076,
+      "sha256": "3315b0d11f6d318b06638e38b01148b585a141d20a49fe80fcea7ba77348451e"
+    },
+    {
+      "path": "requirements-lock.txt",
+      "bytes": 389,
+      "sha256": "24a2aeb899fcdf25bcab57a5d88590f479d582a13ac411ef30b08748273f1756"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 33,
+      "sha256": "394e4bccf864729556a785f59a29e6a2c22ff6536f461f60f2ab62828705f3cd"
+    }
+  ],
+  "bundle_sha256": "b022c2ca7af2c65660422056c65da478cb00ca14f58847ddd6e5127e016615c4"
+}
