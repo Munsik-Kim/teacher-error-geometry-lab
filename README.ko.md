@@ -1,14 +1,12 @@
 # Teacher Error Geometry Lab
 
-교사 오류와 고정 표현에 관한 선형 이론의 CPU 재현
+교사 모델의 오류가 학생 모델의 예측에 어떻게 전달되는지 실험하는 CPU 코드와 검산 도구를 구현했습니다. 기존 선형 회귀 이론의 계산 결과와 반복 실험을 대조합니다.
 
-[English](README.md)
+**Munsik Kim** · [English](README.md)
 
 [공개 저장소](https://github.com/Munsik-Kim/teacher-error-geometry-lab) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
 
-교사 모델의 오류를 학생이 어떻게 물려받는지 다룬 기존 선형 이론을 CPU로 독립 구현했습니다. 입력 상관과 학생이 볼 수 있는 정보 범위를 조절한 실험, 원문 Gaussian 회귀 설정 일부의 수치 재현을 통해 실제 반복 결과와 해석식을 대조했습니다.
-
-같은 모집단 크기의 교사 오류가 학생의 실제 정답 오차에 어떻게 전달되는지 확인합니다. Gaussian 생성·교사 target·FP64 무규제 OLS·모집단 risk·paired 통계 대조·저장 기록 재현 도구를 직접 작성했습니다. NumPy/lstsq와 Matplotlib는 upstream입니다.
+입력 사이의 상관과 학생이 볼 수 있는 정보를 바꾼 뒤, 교사의 답과 일치하는 정도와 실제 정답 오차를 따로 비교합니다. 정규분포 데이터 생성, 교사 답 생성, 64비트 최소제곱 회귀, 모집단 오차 계산, 같은 데이터끼리의 통계 비교, 저장 기록 검산을 구현했습니다. NumPy의 최소제곱 계산과 Matplotlib의 그림 도구를 사용합니다.
 
 ![P1 표본 수별 truth risk: 이론 곡선과 MC 평균 및 pointwise 95% 구간](recorded/p1/figures/01_truth_by_n.png)
 
