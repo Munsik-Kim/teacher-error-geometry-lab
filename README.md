@@ -1,14 +1,12 @@
 # Teacher Error Geometry Lab
 
-A CPU reproduction of teacher–student regression theory
+Implemented CPU experiments and verification tools to test how a teacher model’s errors affect a student’s predictions. The project compares repeated simulations with analytical results from existing linear regression theory.
 
-[한국어](README.ko.md)
+**Munsik Kim** · [한국어](README.ko.md)
 
 [Public repository](https://github.com/Munsik-Kim/teacher-error-geometry-lab) · [CPU workflow](https://github.com/Munsik-Kim/teacher-error-geometry-lab/actions/workflows/cpu.yml) · [Releases](https://github.com/Munsik-Kim/teacher-error-geometry-lab/releases)
 
-An independent CPU implementation of linear teacher–student regression theory. Controlled experiments vary input correlation and the information available to the student. A separate experiment reproduces one Gaussian regression setting from the paper and compares measured population risks with analytical expectations.
-
-We examine how teacher errors of the same population size reach the student's true-signal risk. The implementation covers Gaussian data and teacher targets, FP64 unregularized OLS, population risk, paired statistical comparisons, and recorded-data reproduction tools. NumPy/lstsq and Matplotlib are upstream components.
+The experiments vary input correlation and the information available to the student, then compare errors against both the teacher and the true target. The implementation covers Gaussian data generation, teacher targets, FP64 ordinary least-squares fitting, population risk, paired comparisons and saved-result verification. NumPy/lstsq and Matplotlib are upstream components.
 
 ![P1 truth risk by sample size: theory curves and measured means with pointwise 95% intervals](recorded/p1/figures/01_truth_by_n.png)
 

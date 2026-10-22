@@ -6,8 +6,8 @@
     "publication/FILES.json (self-reference)"
   ],
   "file_count_excluding_self": 131,
-  "bytes_excluding_self": 24472606,
-  "public_file_bundle_sha256": "74434c2fa347fb4d027c817295f730a1f81663f71621343fc9b19303f4a29183",
+  "bytes_excluding_self": 24472492,
+  "public_file_bundle_sha256": "604d7f3cf4beb65ccc6a8088be2279c566a96b92937e03f9245a7591f6692edd",
   "bundle_definition": "SHA256 canonical JSON files list, sort_keys=True,separators=(comma,colon), sorted by relative path",
   "active_public_source_bundle_sha256": "a77e5cb94a684aa2759d9be32facb5e26b2d1334b0381f0e8202ec96d2ab4130",
   "files": [
@@ -38,13 +38,13 @@
     },
     {
       "path": "README.ko.md",
-      "bytes": 4400,
-      "sha256": "30729ee94afd77fc7095ea6f0d63ff5b31d3ca72c557864942ff4ade2a0c0bf1"
+      "bytes": 4363,
+      "sha256": "4549d756110e39c743546dff5cc67fb4f8c4d8cb01240e5818c5ac98e61ee42f"
     },
     {
       "path": "README.md",
-      "bytes": 4251,
-      "sha256": "7bcc6bd80ed7f1d372e665493eaa3734b43c8fd306fb74760aa8b545ea142e43"
+      "bytes": 4174,
+      "sha256": "36e7091c0981ff091742692690c0a508af083d9307ccfdae00dbdb78ab17dabc"
     },
     {
       "path": "configs/p1.json",
