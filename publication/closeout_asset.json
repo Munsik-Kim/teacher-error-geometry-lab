@@ -1,0 +1,12 @@
+{
+  "identity": "v0.2.0 CPU standalone release asset; distinct from executed source/evidence hashes",
+  "filename": "teacher-error-geometry-linear-closeout-v0.2.0.tar.gz",
+  "bytes": 3878247,
+  "sha256": "c6a46d94a9a4eecfd616ebc8d6ed1c4ecd5ab59dfe7c6d7c434fab5928d8efcc",
+  "member_count": 76,
+  "uncompressed_bytes": 5211555,
+  "archive_top_directory": "linear_feature_closeout",
+  "appendix_content_bundle_sha256": "e4e0c50c9d2b0988db36374260d8eacb164ca38358293e7ae41832899a8a2655",
+  "execution_source_bundle_sha256": "8472854f0b38247df859e7ccd76d0ed684d407bdda251251e21c60c84576a799",
+  "raw_or_scientific_fits_modified": false
+}

@@ -1,0 +1,8 @@
+{
+  "status": "PASS",
+  "unique_tests": 9,
+  "failures": 0,
+  "errors": 0,
+  "log": "test_frozen_io_reaggregate_and_independent_verification (test_math.CloseoutMathTests.test_frozen_io_reaggregate_and_independent_verification) ... ok\ntest_high_span_G_one_even_with_weak_gold (test_math.CloseoutMathTests.test_high_span_G_one_even_with_weak_gold) ... ok\ntest_input_groups_duplicate_and_corrupt_prediction_guard (test_math.CloseoutMathTests.test_input_groups_duplicate_and_corrupt_prediction_guard) ... ok\ntest_lstsq_and_independent_qr (test_math.CloseoutMathTests.test_lstsq_and_independent_qr) ... ok\ntest_nonfinite_and_missing_row_rejected (test_math.CloseoutMathTests.test_nonfinite_and_missing_row_rejected) ... ok\ntest_rank_deficiency_explicit_and_qr_refusal (test_math.CloseoutMathTests.test_rank_deficiency_explicit_and_qr_refusal) ... ok\ntest_sign_pair_and_amplitude_invariance_arrays_only (test_math.CloseoutMathTests.test_sign_pair_and_amplitude_invariance_arrays_only) ... ok\ntest_signed_risk_and_quadratic (test_math.CloseoutMathTests.test_signed_risk_and_quadratic) ... ok\ntest_zero_error_and_undefined_ratio_not_epsilon (test_math.CloseoutMathTests.test_zero_error_and_undefined_ratio_not_epsilon) ... ok\n\n----------------------------------------------------------------------\nRan 9 tests in 0.022s\n\nOK\n",
+  "fixture_scope": "independent numeric arrays only; no official split/generator/model"
+}

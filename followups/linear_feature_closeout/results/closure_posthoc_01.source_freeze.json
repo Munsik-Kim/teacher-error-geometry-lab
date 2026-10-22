@@ -1,0 +1,49 @@
+{
+  "frozen_utc": "2026-10-22T07:04:06.660013+00:00",
+  "files": [
+    {
+      "path": "CLOSURE_PROTOCOL.json",
+      "bytes": 5076,
+      "sha256": "3315b0d11f6d318b06638e38b01148b585a141d20a49fe80fcea7ba77348451e"
+    },
+    {
+      "path": "scripts/closeout.py",
+      "bytes": 520,
+      "sha256": "8c0a7ca54f6e484273aabcfe4ccc54051325c43f4860d40c62468776857a1195"
+    },
+    {
+      "path": "src/teg_closeout/__init__.py",
+      "bytes": 77,
+      "sha256": "2b900a7bc5cb4790df399d37377128760ed46fe18d9884c9b71fb87c08734615"
+    },
+    {
+      "path": "src/teg_closeout/analysis.py",
+      "bytes": 14092,
+      "sha256": "7ef6a26896845c68baea9ca9c44ee30ca804b0fcea98330e61d70e6042a19b49"
+    },
+    {
+      "path": "src/teg_closeout/cli.py",
+      "bytes": 9327,
+      "sha256": "299af608736806e12e92f15f00e52a55cd614619166e5709e248d22f65e70c77"
+    },
+    {
+      "path": "src/teg_closeout/math.py",
+      "bytes": 4668,
+      "sha256": "5904a0f6bd5ec9daef9cd777f35c9a2a35cd4b1de4b1630405b0031458c0d881"
+    },
+    {
+      "path": "src/teg_closeout/supervision.py",
+      "bytes": 3790,
+      "sha256": "64b93c0fc13967424676839be4b4c7b2639551d944de62641cc7110388857fbd"
+    },
+    {
+      "path": "tests/test_math.py",
+      "bytes": 7008,
+      "sha256": "c98848898f8c8ee9ae33a9ba1b4d7d4c756daa8508d89ede6ab1bb42afb5fc0e"
+    }
+  ],
+  "source_bundle_sha256": "8472854f0b38247df859e7ccd76d0ed684d407bdda251251e21c60c84576a799",
+  "protocol_sha256": "3315b0d11f6d318b06638e38b01148b585a141d20a49fe80fcea7ba77348451e",
+  "frozen_input_sha256": "366227ea03b1ffad1ca2df91b8319f3eb72c8ad933b62d8c5c6f13c8bcfc4eba",
+  "kind": "posthoc source/input freeze before these four fits; original qualification already observed"
+}

@@ -1,0 +1,116 @@
+{
+  "version": "LINEAR_REPRODUCTION_CLOSEOUT_POSTHOC_v1",
+  "written_utc": "2026-10-22T07:03:44.721847+00:00",
+  "context": {
+    "known_before_choice": "F2D PCA64selection andF2Rqualificationnormfailure alreadyobserved; closesexistinglinearimplementation/reproduction, notoriginalH1resume",
+    "original_F2": "COMPLETE_VALIDATION_STOP / WEAK_TASK_REPRESENTATION",
+    "original_F2R": "COMPLETE_QUALIFICATION_STOP",
+    "original_H1": "NOT_RUN",
+    "original_H1_D_over_c2": null,
+    "original_H1_interval": null,
+    "original_H2": "NOT_RUN",
+    "original_H3": "NOT_RUN"
+  },
+  "inputs": {
+    "relative_npz": "inputs/data.npz",
+    "files": [
+      {
+        "path": "inputs/data.npz",
+        "bytes": 2435666,
+        "sha256": "366227ea03b1ffad1ca2df91b8319f3eb72c8ad933b62d8c5c6f13c8bcfc4eba"
+      },
+      {
+        "path": "inputs/error_geometry.json",
+        "bytes": 7685,
+        "sha256": "85c18e276afed95b06f720d866476bb1072e14cf1c835607d0a2ecaa375ad0e3"
+      },
+      {
+        "path": "inputs/metadata.json",
+        "bytes": 8513,
+        "sha256": "910aa36a5de4c7021edf448d13d135e98112fc5857dc85c88bd455713297e988"
+      },
+      {
+        "path": "inputs/transform.json",
+        "bytes": 1051351,
+        "sha256": "26751c4c131b89e977b62f5a3e9a78fe69124d6fe5bb358dce20839b1eeb20a3"
+      }
+    ],
+    "training": "existing F2R train0_2048",
+    "evaluation": "already-accessed qualification2048 reusedposthoc",
+    "train_ID_hash": "2bfcccf616a99bebb7995f2f1911caa10b572f3b054028c6355e516e960fd123",
+    "eval_ID_hash": "98824d75bc582b4285de7755f18aef06de0d8583d71b45353af0973e50bbb8da",
+    "rows_train": 2048,
+    "rows_eval": 2048,
+    "PCA_dimensions": 64,
+    "columns_with_intercept": 65,
+    "feature_transform": "originalcalibrationPCA64centering/components/RMSunchanged",
+    "error_geometry": "originalF2Rh91/u/v/direction/normalizationunchanged",
+    "gold_normalization": "score/sqrt(110/3)",
+    "gold_coefficient": "originalpilotstored65coefficients reusedafterexactbaselineprediction/MSEcheck",
+    "new_case_or_scientific_seed_generation": false,
+    "original_final_or_unexposedtest_access": false
+  },
+  "fit": {
+    "primary_arms": [
+      "high_plus",
+      "high_minus",
+      "low_plus",
+      "low_minus"
+    ],
+    "target": "y_train +/- frozen e_high/low_train",
+    "primary_fit_calls": 4,
+    "gold_reuse": 1,
+    "gold_primary_replay": 0,
+    "solver": "FP64 np.linalg.lstsq rcond=None, explicitinterceptfirst,noexplicitinverse",
+    "rank_rule": "eps64*max(designshape)*largest_singular",
+    "clipping_rescale_jitter_ridge": false,
+    "learner_inputs": "features and assigned scalar target only; syntheticteacherbuilder/evaluator may usegold",
+    "independent_reference_QR_calls": 2,
+    "independent_reference_target_objects": 3,
+    "fixture_solver_calls": "separate,notexperimentreplicates"
+  },
+  "metrics": {
+    "R": "mean_eval((f-y*)²)",
+    "A": "mean_eval((f-T)²),goldNA",
+    "E": "mean_eval(e²) actualevaluationenergy, notnominal.25",
+    "Delta": "(R_plus+R_minus)/2-R_gold",
+    "G": "Delta/E, ratio of means, undefinedforzero/nonfiniteE,noepsilon,no0to1clip",
+    "cross": "2mean_eval((f_gold-y*)*(f_arm-f_gold))",
+    "single_arm_identity": "R_arm-R_gold=mean(d²)+signedcross",
+    "sign_average_identity": "Delta=mean((K e_train)²), K includesfixedpreprocessing/intercept",
+    "known_high_span_property": "rank65andhighinspan implyG_high1; implementationchecknotnewTransformerfinding",
+    "amplitude_invariance": "syntheticarrayfixtureonly, noactualextraamplitudearms"
+  },
+  "interpretation": {
+    "estimand": "posthocerror-energy-normalized finite-train transferredpredictionenergy on reusedqualification",
+    "differs_from_registered_H1": "not equal-sizedrawriskcontrastD/c²,no8seedCI,nosupportdecision",
+    "independent_training_datasets": 1,
+    "significance_tests_or_new_statistical_thresholds": false,
+    "gaussian_expectedrisk_formula_for_Transformer": false,
+    "nonlinear_or_learnedrepresentation_claim": false
+  },
+  "verification": {
+    "atol": 1e-10,
+    "rtol": 1e-08,
+    "gold_reference": "independentQRgoldtarget andstoredoriginalcoeffprediction",
+    "error_reference": "independentQRmulti-targeterror-only, compare4actualfitcoeff/pred/K energies",
+    "serialized_prediction": "newprocessloadscoeffanddirectlyrecalculates train/evalpredictions",
+    "risk": "residualvectors vs augmentedquadraticexpansion foralreadyfittedcoeff only",
+    "raw_summary": "savedrawonly,nofits",
+    "tolerance_relax_afterresults": false
+  },
+  "budget": {
+    "CPU_phase_resident_wall_seconds": 900,
+    "BLAS_threads": 1,
+    "new_artifacts_bytes_cap_including_snapshot_and_archive": 100000000,
+    "GPU_forward_model_restaging_download": 0,
+    "package_install_upgrade": 0,
+    "Git_mutations_remote_publication": 0
+  },
+  "completion": {
+    "standalone_frozen_feature_CPU_reproduction": true,
+    "snapshot_appendix": "followups/linear_feature_closeout",
+    "project_scope": "linearreproductionandfixedfeaturemechanismappendixclosed",
+    "new_research_plans_or_runs": false
+  }
+}

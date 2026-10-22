@@ -1,0 +1,9 @@
+{
+  "status": "COMPLETE",
+  "wall_seconds": 0.10270983000009437,
+  "input_npz_sha256": "366227ea03b1ffad1ca2df91b8319f3eb72c8ad933b62d8c5c6f13c8bcfc4eba",
+  "GPU_forward_calls": 0,
+  "new_scenario_generation": 0,
+  "original_H1_main_fit_calls": 0,
+  "primary_lstsq_calls": 4
+}

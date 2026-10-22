@@ -1,0 +1,280 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "name": "saved raw/input identity: y_train",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: y_eval",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: e_train",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: e_eval",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: gold_coefficient",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: gold_train_prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved raw/input identity: gold_eval_prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: train_scenario_ids",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: train_group_ids",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: train_canonical_signatures",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: eval_scenario_ids",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: eval_group_ids",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "saved row ID exact identity: eval_canonical_signatures",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "QR gold coefficient vs original pilot",
+      "status": "PASS",
+      "max_abs_difference": 6.38378239159465e-16
+    },
+    {
+      "name": "QR gold qualification prediction",
+      "status": "PASS",
+      "max_abs_difference": 6.5503158452884236e-15
+    },
+    {
+      "name": "high_plus: saved train coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "high_plus: saved eval coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "high_plus: independent QR coefficient linearity",
+      "status": "PASS",
+      "max_abs_difference": 5.551115123125783e-16
+    },
+    {
+      "name": "high_plus: train K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 1.0658141036401503e-14
+    },
+    {
+      "name": "high_plus: qualification K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 7.549516567451064e-15
+    },
+    {
+      "name": "high_plus: risk residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "name": "high_plus: agreement residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 4.718447854656915e-16
+    },
+    {
+      "name": "high_plus: signed risk decomposition",
+      "status": "PASS",
+      "max_abs_difference": 5.551115123125783e-17
+    },
+    {
+      "name": "high_minus: saved train coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "high_minus: saved eval coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "high_minus: independent QR coefficient linearity",
+      "status": "PASS",
+      "max_abs_difference": 7.216449660063518e-16
+    },
+    {
+      "name": "high_minus: train K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 7.181755190543981e-15
+    },
+    {
+      "name": "high_minus: qualification K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 6.217248937900877e-15
+    },
+    {
+      "name": "high_minus: risk residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "name": "high_minus: agreement residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 1.2212453270876722e-15
+    },
+    {
+      "name": "high_minus: signed risk decomposition",
+      "status": "PASS",
+      "max_abs_difference": 5.551115123125783e-17
+    },
+    {
+      "name": "low_plus: saved train coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "low_plus: saved eval coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "low_plus: independent QR coefficient linearity",
+      "status": "PASS",
+      "max_abs_difference": 6.661338147750939e-16
+    },
+    {
+      "name": "low_plus: train K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 5.329070518200751e-15
+    },
+    {
+      "name": "low_plus: qualification K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 5.218048215738236e-15
+    },
+    {
+      "name": "low_plus: risk residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 6.38378239159465e-16
+    },
+    {
+      "name": "low_plus: agreement residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 2.7755575615628914e-16
+    },
+    {
+      "name": "low_plus: signed risk decomposition",
+      "status": "PASS",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "low_minus: saved train coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "low_minus: saved eval coefficient prediction",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    },
+    {
+      "name": "low_minus: independent QR coefficient linearity",
+      "status": "PASS",
+      "max_abs_difference": 8.881784197001252e-16
+    },
+    {
+      "name": "low_minus: train K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 6.106226635438361e-15
+    },
+    {
+      "name": "low_minus: qualification K-error identity",
+      "status": "PASS",
+      "max_abs_difference": 4.884981308350689e-15
+    },
+    {
+      "name": "low_minus: risk residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 4.440892098500626e-16
+    },
+    {
+      "name": "low_minus: agreement residual vs quadratic",
+      "status": "PASS",
+      "max_abs_difference": 3.3306690738754696e-16
+    },
+    {
+      "name": "low_minus: signed risk decomposition",
+      "status": "PASS",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "high: sign-average independent K-error energy",
+      "status": "PASS",
+      "max_abs_difference": 5.551115123125783e-17
+    },
+    {
+      "name": "low: sign-average independent K-error energy",
+      "status": "PASS",
+      "max_abs_difference": 3.469446951953614e-18
+    },
+    {
+      "name": "high error train full-span representation",
+      "status": "PASS",
+      "max_abs_difference": 2.4424906541753444e-15
+    },
+    {
+      "name": "high error heldout full-span extension",
+      "status": "PASS",
+      "max_abs_difference": 2.6645352591003757e-15
+    },
+    {
+      "name": "high error G=1 known linear identity",
+      "status": "PASS",
+      "max_abs_difference": 2.220446049250313e-16
+    },
+    {
+      "name": "raw-only summary exact Python values",
+      "status": "PASS",
+      "max_abs_difference": 0.0
+    }
+  ],
+  "check_count": 53,
+  "atol": 1e-10,
+  "rtol": 1e-08,
+  "reference_QR_factorizations": 2,
+  "reference_solve_calls": 2,
+  "reference_target_fit_objects": 3,
+  "primary_refits": 0,
+  "new_scenarios": 0,
+  "GPU_forward_calls": 0,
+  "claim": "Numerical implementation verification, not registered H1 evidence."
+}

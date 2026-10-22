@@ -21,6 +21,16 @@ jobs:
           .venv/bin/python -I -m pip check
       - name: Test and reproduce recorded data (no full experiment)
         run: .venv/bin/python -I -B -m teacher_error_geometry verify-public --output "$RUNNER_TEMP/teg-public"
+      - name: Check frozen-feature appendix inventory
+        run: .venv/bin/python -I -B followups/linear_feature_closeout/scripts/check_package.py
+      - name: Test synthetic arrays and independently verify stored appendix results
+        run: |
+          .venv/bin/python -I -B followups/linear_feature_closeout/scripts/closeout.py test --output "$RUNNER_TEMP/teg-closeout-tests"
+          .venv/bin/python -I -B followups/linear_feature_closeout/scripts/closeout.py verify --inputs followups/linear_feature_closeout/inputs/data.npz --run followups/linear_feature_closeout/results/closure_posthoc_01 --output "$RUNNER_TEMP/teg-closeout-verify"
+      - name: Rebuild appendix summaries and figures without fitting
+        run: |
+          .venv/bin/python -I -B followups/linear_feature_closeout/scripts/closeout.py summarize --run followups/linear_feature_closeout/results/closure_posthoc_01 --output "$RUNNER_TEMP/teg-closeout-summary"
+          .venv/bin/python -I -B scripts/check_closeout_publication.py . --summary "$RUNNER_TEMP/teg-closeout-summary/summary.json"
       - name: Show verification receipts and failure diagnostics
         if: always()
         run: |
@@ -32,6 +42,15 @@ jobs:
           for path in sorted(paths):
               if path.is_file():
                   print("RECEIPT", path.relative_to(root), flush=True)
+                  print(path.read_text(encoding="utf-8")[-40000:], flush=True)
+          temporary = Path(os.environ["RUNNER_TEMP"])
+          appendix_paths = [*temporary.glob("teg-closeout-*.supervision.json")]
+          for name in ("teg-closeout-tests", "teg-closeout-verify", "teg-closeout-summary"):
+              directory = temporary / name
+              appendix_paths.extend(directory.glob("*.json"))
+          for path in sorted(appendix_paths):
+              if path.is_file():
+                  print("APPENDIX_RECEIPT", path.relative_to(temporary), flush=True)
                   print(path.read_text(encoding="utf-8")[-40000:], flush=True)
           PY
       - name: Check local documentation links and bilingual facts

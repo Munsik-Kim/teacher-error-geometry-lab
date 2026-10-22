@@ -1,0 +1,13 @@
+{
+  "original": "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/src/teg_f2r/supervision.py",
+  "new": "src/teg_closeout/supervision.py",
+  "bytes": 3790,
+  "sha256": "64b93c0fc13967424676839be4b4c7b2639551d944de62641cc7110388857fbd",
+  "byte_identical": true,
+  "static_scope": "stdlib-only owned-process resident wall supervisor; no data/model/generator imports",
+  "prior_verification_receipts": [
+    "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/audit/cpu_watchdog_tests.json",
+    "/home/mskim/Codex_main/teacher-error-geometry-transformer-f2r-20261022T055149Z/audit/gpu_watchdog_cleanup.json"
+  ],
+  "current_scope": "CPU-only 900-second phases; original receipts reused, no GPU executed"
+}

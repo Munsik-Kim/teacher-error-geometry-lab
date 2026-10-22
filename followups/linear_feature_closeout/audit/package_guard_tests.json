@@ -1,0 +1,43 @@
+{
+  "status": "PASS",
+  "unique_tests": 6,
+  "checks": [
+    {
+      "case": "traversal",
+      "status": "PASS",
+      "error": "UNSAFE_ARCHIVE_MEMBER:linear_feature_closeout/../escape.txt",
+      "output_created": false
+    },
+    {
+      "case": "absolute",
+      "status": "PASS",
+      "error": "UNSAFE_ARCHIVE_MEMBER:/absolute.txt",
+      "output_created": false
+    },
+    {
+      "case": "symlink",
+      "status": "PASS",
+      "error": "UNSAFE_ARCHIVE_MEMBER:linear_feature_closeout/link",
+      "output_created": false
+    },
+    {
+      "case": "duplicate",
+      "status": "PASS",
+      "error": "UNSAFE_ARCHIVE_MEMBER:linear_feature_closeout/a.txt",
+      "output_created": false
+    },
+    {
+      "case": "noncanonical",
+      "status": "PASS",
+      "error": "UNSAFE_ARCHIVE_MEMBER:linear_feature_closeout//a.txt",
+      "output_created": false
+    },
+    {
+      "case": "positive_roundtrip",
+      "status": "PASS",
+      "files": 2
+    }
+  ],
+  "wall_seconds": 0.0027319469991198275,
+  "scope": "stdlib synthetic archive fixture only; no scientific fits/data/model access"
+}

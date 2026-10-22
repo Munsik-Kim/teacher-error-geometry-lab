@@ -1,0 +1,47 @@
+{
+  "status": "PASS",
+  "captured_utc": "2026-10-22T06:56:34.385852+00:00",
+  "checks": {
+    "train0": {
+      "shape": [
+        2048,
+        576
+      ],
+      "dtype": "float32",
+      "row_identity_checks": 2048,
+      "parser_gold_checks": 2048,
+      "error_MSE": [
+        0.23537228317853595,
+        0.2552291281625224
+      ]
+    },
+    "qualification": {
+      "shape": [
+        2048,
+        576
+      ],
+      "dtype": "float32",
+      "row_identity_checks": 2048,
+      "parser_gold_checks": 2048,
+      "error_MSE": [
+        0.23339436109765166,
+        0.2622288471051481
+      ]
+    }
+  },
+  "gold_baseline_MSE": 0.1830017484220633,
+  "original_gold_baseline_MSE": 0.1830017484220633,
+  "gold_saved_prediction_max_abs_diff": 0.0,
+  "error_saved_max_abs_diff": 0.0,
+  "existing_feature_rows_read": 4096,
+  "new_scenarios": 0,
+  "official_test_prefix_reconstruction": 0,
+  "official_remaining_test_read": 0,
+  "model_forward": 0,
+  "solver_calls": 0,
+  "atol": 1e-10,
+  "rtol": 1e-08,
+  "wall_seconds": 0.26135887000054936,
+  "cpu_seconds": 0.2452469,
+  "peak_RSS_KiB": 81320
+}

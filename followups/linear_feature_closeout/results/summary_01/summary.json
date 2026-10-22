@@ -1,0 +1,83 @@
+{
+  "analysis_kind": "CLOSURE_POSTHOC_SINGLE_TRAIN_DATASET",
+  "gold": {
+    "truth_risk": 0.1830017484220633,
+    "train_mse": 0.17188190686455354,
+    "teacher_agreement_mse": null
+  },
+  "arms": [
+    {
+      "arm": "high_plus",
+      "truth_risk": 0.41186069270054315,
+      "teacher_agreement_mse": 0.18300174842206332,
+      "teacher_error_mse": 0.2333943610976521,
+      "train_mse": 0.17188190686455357,
+      "risk_difference": 0.22885894427847986,
+      "prediction_change_energy": 0.2333943610976521,
+      "signed_cross_term": -0.004535416819172185
+    },
+    {
+      "arm": "high_minus",
+      "truth_risk": 0.42093152633888775,
+      "teacher_agreement_mse": 0.1830017484220633,
+      "teacher_error_mse": 0.2333943610976521,
+      "train_mse": 0.17188190686455357,
+      "risk_difference": 0.23792977791682446,
+      "prediction_change_energy": 0.23339436109765233,
+      "signed_cross_term": 0.004535416819172175
+    },
+    {
+      "arm": "low_plus",
+      "truth_risk": 0.19543653252333384,
+      "teacher_agreement_mse": 0.45190435687908487,
+      "teacher_error_mse": 0.2622288471051484,
+      "train_mse": 0.41349007192325693,
+      "risk_difference": 0.012434784101270552,
+      "prediction_change_energy": 0.016228076066061095,
+      "signed_cross_term": -0.0037932919647905407
+    },
+    {
+      "arm": "low_minus",
+      "truth_risk": 0.20302311645291504,
+      "teacher_agreement_mse": 0.43920622877566007,
+      "teacher_error_mse": 0.2622288471051484,
+      "train_mse": 0.40915789530303837,
+      "risk_difference": 0.02002136803085175,
+      "prediction_change_energy": 0.01622807606606122,
+      "signed_cross_term": 0.0037932919647905325
+    }
+  ],
+  "transfer": [
+    {
+      "error": "high",
+      "eval_error_mse": 0.2333943610976521,
+      "sign_averaged_risk_increase": 0.23339436109765216,
+      "transfer_ratio_G": 1.0000000000000002,
+      "ratio_status": "DEFINED"
+    },
+    {
+      "error": "low",
+      "eval_error_mse": 0.2622288471051484,
+      "sign_averaged_risk_increase": 0.016228076066061137,
+      "transfer_ratio_G": 0.06188516726977033,
+      "ratio_status": "DEFINED"
+    }
+  ],
+  "G_high_minus_G_low": 0.9381148327302299,
+  "eval_rows": 2048,
+  "train_rows": 2048,
+  "independent_train_datasets": 1,
+  "registered_H1": "NOT_RUN",
+  "registered_H1_effect": null,
+  "registered_H1_interval": null,
+  "registered_H2": "NOT_RUN",
+  "registered_H3": "NOT_RUN",
+  "planned": 4,
+  "attempted": 4,
+  "valid": 4,
+  "failed": 0,
+  "missing": 0,
+  "gold_reused": 1,
+  "gold_replay_primary": 0,
+  "scope_note": "Existing qualification reused post hoc; ratio of means; no hypothesis decision or confidence interval."
+}

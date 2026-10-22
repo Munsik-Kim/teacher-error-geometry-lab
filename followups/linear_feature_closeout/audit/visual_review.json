@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "reviewer": "AI-assisted visual inspection, not independent human review",
+  "files": [
+    "results/summary_01/figures/gaussian_anchor.png",
+    "results/summary_01/figures/posthoc_transfer.png",
+    "results/summary_01/figures/signed_decomposition.png"
+  ],
+  "checked": [
+    "axes and units",
+    "historical versus posthoc labeling",
+    "four arm order",
+    "actual error denominator and G values",
+    "signed cross terms visible",
+    "P2 expected versus historical MC means/pointwise intervals"
+  ],
+  "scope": "three PNGs opened; SVG files generated but not separately rendered"
+}
